@@ -1,4 +1,4 @@
-# Mojang API Documentation
+# [Mojang API Documentation](https://mojang-api-docs.netlify.app)
 I'm sure this isn't complete. I know that there are old endpoints I've neglected to document, but that's because they no longer function (e.g old name change, block / reserve name, create Mojang account, redeem voucher (old), etc). **Even then**, I may have missed an endpoint or mistakenly documented something. If this is the case don't hesitate to reach out and let me know.
 
 This documentation wouldn't be possible without the following people:
