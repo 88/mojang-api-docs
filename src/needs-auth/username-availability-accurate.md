@@ -52,6 +52,20 @@ You have not provided a valid JWT / auth token, or you have neglected to provide
 }
 ```
 
+**405: Method Not Allowed**
+
+This error occurs when you have not set the HTTP method of the request to `GET`.
+
+```json
+{
+  "path": "/minecraft/profile/name/:username/available",
+  "errorType": "METHOD_NOT_ALLOWED",
+  "error": "METHOD_NOT_ALLOWED",
+  "errorMessage": "Method Not Allowed",
+  "developerMessage": "Method Not Allowed"
+}
+```
+
 **429: Too Many Requests**
 
 If you have sent too many requests in a specific amount of time, this error will appear.
@@ -65,5 +79,3 @@ If you have sent too many requests in a specific amount of time, this error will
   "developerMessage" : "The client has sent too many requests within a certain amount of time"
 }
 ```
-
-**TODO: Fill in other responses if any**

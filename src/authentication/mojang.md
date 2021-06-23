@@ -1,6 +1,4 @@
 # Authenticating a Mojang account
-**Warning: This article is DEPRECATED. Mojang is migrating existing Mojang accounts to Microsoft accounts in early 2021 and won't be supporting this method of authentication anymore. This article's aim is to show how to authenticate Mojang accounts if you have one from before December 1st, 2020, when Mojang switched to Microsoft's system for all new users.**
-
 In order to use any of the endpoints on Mojang's API that require authentication, we of course need to be authenticated. This article goes through how to authenticate a user via Mojang's `authserver`, codename Yggdrasil, to get an authorization token we can use.
 
 Keep in mind, this endpoint is not on the main Mojang API domain, instead using `authserver.mojang.com`.
@@ -17,15 +15,17 @@ The POST body should fit this format:
 ```json
 {
   "agent" : {
-    "name" : "Minecraft", // identifying which game is connecting
-    "version" : 1
-  },
+    "name" : "Minecraft", // identifying which game is connecting, "Scrolls" returns Scrolls profile info
+    "version" : 1 // version of the agent (OPTIONAL)
+  }, // you don't even need this! "agent" : "minecraft" works fine too.
   "username" : "testuser@domain.tld", // username (legacy) or email address
   "password" : "CoolPassw0rd!34^", // password
   "clientToken" : "Mojang-API-Client", // client token used to identify yourself (OPTIONAL)
-  "requestUser" : "true" // request a response back containing user information
+  "requestUser" : "true" // request a response back containing user information (OPTIONAL)
 }
 ```
+
+**Note:** If `clientToken` is `null` or not provided in the POST body, Yggdrasil will generate a random UUIDv4 as the `clientToken`.
 
 Interestingly enough, Mojang only cares about the first 72 characters of a user's password. You don't need to supply any more characters, but if you do and if you get any more characters wrong, it'll still let you in.
 
@@ -36,7 +36,7 @@ We have successfully authenticated. Below is a sample response of what you would
 
 ```json
 {
-  "user" : { // Mojang user info
+  "user" : { // Mojang user info (only when requestUser is true)
     "properties" : [ // user properties (MAY NOT BE RETURNED.)
       {
         "name" : "preferredLanguage", // which language system emails will be sent in
@@ -94,6 +94,12 @@ There can be numerous reasons why you received this error. A few are listed belo
   "error" : "ForbiddenOperationException",
   "errorMessage" : "Invalid credentials. Account migrated, use email as username.",
   "cause" : "UserMigratedException"
+}
+
+// did not include the "username" value in POST body
+{
+  "error" : "ForbiddenOperationException",
+  "errorMessage" : "Forbidden"
 }
 ```
 

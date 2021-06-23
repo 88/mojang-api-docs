@@ -1,7 +1,7 @@
 # Create a Minecraft profile
 This endpoint allows a user with a redeemed giftcode on their account to create a Minecraft profile.
 
-**Note:** This endpoint has a ratelimit of 6-10 requests per minute.
+This endpoint has a ratelimit of 6 requests per account and 60 requests per IP.
 
 ### Request
 - **Method:** `POST`

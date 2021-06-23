@@ -46,3 +46,17 @@ You provided an invalid Bearer token or neglected to fill in the `Authorization`
   "developerMessage" : "Unauthorized"
 }
 ```
+
+**404: Not Found**
+
+You are trying to view the profile of an account that does not own a copy of Minecraft.
+
+```json
+{
+  "path" : "/minecraft/profile",
+  "errorType" : "NOT_FOUND",
+  "error" : "NOT_FOUND",
+  "errorMessage" : "The server has not found anything matching the request URI",
+  "developerMessage" : "The server has not found anything matching the request URI"
+}
+```

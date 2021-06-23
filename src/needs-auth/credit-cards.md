@@ -31,7 +31,7 @@ No errors were encountered while fetching credit card information. If you have n
     "userId" : "88a4eeb5bd5a4640aa3865878aec6d6b", // internal Mojang account identifier
     "last4" : "4272", // last 4 digits of the card
     "cardType" : "Visa", // visa/mastercard/etc
-    "provider" : "braintree", // payment provider used - there could also be be "moneybookers", "ayden", "skrill", "dibs", "paypal"
+    "provider" : "braintree", // payment provider used - this could also be "moneybookers", "ayden", "skrill", "dibs", "paypal"
     "paymentInfo" : "434283**4272", // redacted credit card number
     "createdAt" : 1597463065000, // when was the credit card added?
     "storedInVaultAt" : 1597463067000, // when was the credit card stored?

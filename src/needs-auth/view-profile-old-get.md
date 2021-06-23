@@ -29,6 +29,7 @@ No errors were encountered when fetching your profile information. Sample respon
     "createdAt": 1587576665000, // date the profile was made premium
     "legacyProfile": false, // is the profile legacy / unmigrated?
     "suspended": false, // ???
+    "tokenId": "21580755", // ??? internal identifier, only appears for accounts created as Mojang accounts, NOT accounts that were previously unmigrated/legacy
     "paid": true, // is the profile paid?
     "migrated": false // ??? this appears as false for migrated (Mojang) accounts as well
   }
@@ -41,7 +42,7 @@ This error occurs when you either haven't answered your security questions, or w
 
 ```json
 {
-  "error" : "UnauthorizedOperationException",
-  "errorMessage" : "User not authenticated"
+  "error": "Unauthorized",
+  "errorMessage": "The request requires user authentication"
 }
 ```

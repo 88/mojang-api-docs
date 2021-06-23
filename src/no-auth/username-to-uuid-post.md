@@ -12,12 +12,16 @@ The JSON body of the request must look similar to this (of course, supplying you
 
 ```json
 [
-  "lukethehacker23",
-  "Hacker",
-  "Unpredictable",
-  "Await",
+  "thx",
+  "Dusks",
   "tanpug",
-  "Dusks"
+  "D__G",
+  "Gr8_Escape",
+  "Paradox",
+  "Ooh",
+  "Tremendous",
+  "Hexene",
+  "emotional"
 ]
 ```
 
@@ -33,35 +37,61 @@ There were no errors with the request. You may still get a `200 OK` response if 
 // valid Minecraft profiles were found - they are sorted when returned
 [
   {
-    "id" : "cdb5aee80f904fdda63ba16d38cd6b3b", // UUID of account
-    "name" : "lukethehacker23" // account username
+    "id": "6d752bb0ef41432a825a4d44185de121",
+    "name": "Gr8_Escape"
   },
   {
-    "id" : "e426cee9bd5044f6b4d9628b981d36a0", // UUID of account
-    "name" : "Await" // account username
+    "id": "7211ae0bdb3f4680ae7cb34f2c4befc0",
+    "name": "Hexene"
   },
   {
-    "id" : "8af296533b6844d085932742dca689c9", // UUID of account
-    "name" : "Dusks" // account username
+    "id": "8af296533b6844d085932742dca689c9",
+    "name": "Dusks"
   },
   {
-    "id" : "dd5e3b0b6d2440d2a740ebdbddb6e76b", // UUID of account
-    "name" : "Hacker" // account username
+    "id": "c7b3d49c580c4af2a824ca07b37ff2f9",
+    "name": "D__G"
   },
   {
-    "id" : "f0d9de88bbb54c9eae429cd8fbd693ab", // UUID of account
-    "name" : "tanpug" // account username
+    "id": "b3d0b85c9daf43d387f72696bdb618a1",
+    "name": "Paradox"
   },
   {
-    "id" : "c3d8e16622234b6bb6bcccf7907fb35a", // UUID of account
-    "name" : "Unpredictable" // account username
+    "id": "f0d9de88bbb54c9eae429cd8fbd693ab",
+    "name": "tanpug"
+  },
+  {
+    "id": "42d414a31d3e456bb08864e254abfd54",
+    "name": "emotional"
+  },
+  {
+    "id": "3e290b0243cf47f9801fa162ae7f0ff6",
+    "name": "Ooh"
+  },
+  {
+    "id": "44717d8d18c8430184defff3a92167a0",
+    "name": "thx"
+  },
+  {
+    "id": "7d96137e15a24f09b79f2366199d822e",
+    "name": "Tremendous"
   }
 ]
 ```
 
+**Note:** You may have noticed that Microsoft profiles are returned first in the array, and sorted separately from Mojang profiles. Legacy profiles are returned last in the array and are also sorted separately. 
+
+The order goes: MSA (sorted alphabetically, case-insensitive) --> Mojang (sorted alphabetically, case-insensitive) --> Legacy (sorted alphabetically, case-insensitive)
+
 **400: Bad Request**
 
 You could have gotten this error either because you've supplied an invalid username as one of the names in the array you sent as the POST body, because you supplied invalid JSON as the POST body, or because you supplied more than 10 names in the POST body.
+
+A list of invalid characters known to trigger this status code: `#&\|/"`
+
+Names that are 26 characters and longer will also trigger this status code. 
+
+Any name that is under 25 characters and fits the regex `^(?=.*?(\w|^)(\w|$))((?![#&\\\|\/"])\w){1,25}$` will not trigger this error.
 
 ```json
 // invalid length

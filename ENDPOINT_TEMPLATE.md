@@ -36,9 +36,7 @@ The PUT body for this request should be similar to this:
 Explanation of error and why it occurs.
 
 ```json
-{
-  "error": "error_msg"
-}
+// error JSON response here
 ```
 
 **401: Unauthorized** (if needed)
@@ -46,11 +44,5 @@ Explanation of error and why it occurs.
 You provided an invalid Bearer token or neglected to fill in the `Authorization` header entirely.
 
 ```json
-{
-  "path" : "/path/to/endpoint/:parameter",
-  "errorType" : "UnauthorizedOperationException",
-  "error" : "UnauthorizedOperationException",
-  "errorMessage" : "Unauthorized",
-  "developerMessage" : "Unauthorized"
-}
+// unauthorized JSON response here
 ```
