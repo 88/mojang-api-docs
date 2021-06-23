@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="sidebar-visible no-js navy">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -52,7 +52,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -78,7 +78,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('navy')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Mojang API Documentation</a></li><li class="chapter-item expanded "><a href="no-auth/index.html"><strong aria-hidden="true">2.</strong> No authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="no-auth/sale-stats.html"><strong aria-hidden="true">2.1.</strong> Sale statistics</a></li><li class="chapter-item expanded "><a href="no-auth/blocked-servers.html"><strong aria-hidden="true">2.2.</strong> Blocked servers</a></li><li class="chapter-item expanded "><a href="no-auth/username-availability-accurate.html"><strong aria-hidden="true">2.3.</strong> Username availability (accurate)</a></li><li class="chapter-item expanded "><a href="no-auth/username-to-uuid-get.html"><strong aria-hidden="true">2.4.</strong> Username to UUID (GET)</a></li><li class="chapter-item expanded "><a href="no-auth/username-to-uuid-post.html"><strong aria-hidden="true">2.5.</strong> Username to UUID (POST)</a></li><li class="chapter-item expanded "><a href="no-auth/uuid-to-username.html"><strong aria-hidden="true">2.6.</strong> UUID to username</a></li><li class="chapter-item expanded "><a href="no-auth/uuid-to-profile.html"><strong aria-hidden="true">2.7.</strong> UUID to user profile (skins, capes, etc.)</a></li><li class="chapter-item expanded "><a href="no-auth/name-history.html"><strong aria-hidden="true">2.8.</strong> Find profile's username history</a></li></ol></li><li class="chapter-item expanded "><a href="authentication/index.html"><strong aria-hidden="true">3.</strong> Authenticating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="authentication/bearers.html"><strong aria-hidden="true">3.1.</strong> A peek into Bearer tokens</a></li><li class="chapter-item expanded "><a href="authentication/msa.html"><strong aria-hidden="true">3.2.</strong> Authenticating a Microsoft account</a></li><li class="chapter-item expanded "><a href="authentication/mojang.html"><strong aria-hidden="true">3.3.</strong> Authenticating a Mojang account</a></li></ol></li><li class="chapter-item expanded "><a href="sq-flow/index.html"><strong aria-hidden="true">4.</strong> Security question-answer flow</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="sq-flow/list.html"><strong aria-hidden="true">4.1.</strong> List of security questions</a></li><li class="chapter-item expanded "><a href="sq-flow/check-if-sqs-needed.html"><strong aria-hidden="true">4.2.</strong> Check if security questions are needed</a></li><li class="chapter-item expanded "><a href="sq-flow/get-sqs.html"><strong aria-hidden="true">4.3.</strong> Get security questions</a></li><li class="chapter-item expanded "><a href="sq-flow/send-sq-answers.html"><strong aria-hidden="true">4.4.</strong> Send security answers</a></li></ol></li><li class="chapter-item expanded "><a href="needs-auth/index.html"><strong aria-hidden="true">5.</strong> Requires authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="needs-auth/redeem-gc.html"><strong aria-hidden="true">5.1.</strong> Redeem a giftcode / voucher</a></li><li class="chapter-item expanded "><a href="needs-auth/username-availability-accurate.html"><strong aria-hidden="true">5.2.</strong> Username availability (accurate)</a></li><li class="chapter-item expanded "><a href="needs-auth/create-profile.html"><strong aria-hidden="true">5.3.</strong> Create a Minecraft profile</a></li><li class="chapter-item expanded "><a href="needs-auth/view-user.html"><strong aria-hidden="true">5.4.</strong> View user information</a></li><li class="chapter-item expanded "><a href="needs-auth/view-profile.html"><strong aria-hidden="true">5.5.</strong> View your profile information</a></li><li class="chapter-item expanded "><a href="needs-auth/view-profile-old-get.html"><strong aria-hidden="true">5.6.</strong> View your profile information (old) - GET</a></li><li class="chapter-item expanded "><a href="needs-auth/view-profile-old-post.html"><strong aria-hidden="true">5.7.</strong> View your profile information (old) - POST</a></li><li class="chapter-item expanded "><a href="needs-auth/name-change-eligibility.html"><strong aria-hidden="true">5.8.</strong> Name change eligibility</a></li><li class="chapter-item expanded "><a href="needs-auth/change-name.html"><strong aria-hidden="true">5.9.</strong> Change your account's username</a></li><li class="chapter-item expanded "><a href="needs-auth/check-skin.html"><strong aria-hidden="true">5.10.</strong> Check your account's skin (old)</a></li><li class="chapter-item expanded "><a href="needs-auth/change-skin.html"><strong aria-hidden="true">5.11.</strong> Change your account's skin</a></li><li class="chapter-item expanded "><a href="needs-auth/reset-skin.html"><strong aria-hidden="true">5.12.</strong> Reset your skin</a></li><li class="chapter-item expanded "><a href="needs-auth/check-capes.html"><strong aria-hidden="true">5.13.</strong> Check your account's capes (old)</a></li><li class="chapter-item expanded "><a href="needs-auth/change-cape.html"><strong aria-hidden="true">5.14.</strong> Change your enabled cape</a></li><li class="chapter-item expanded "><a href="needs-auth/disable-cape.html"><strong aria-hidden="true">5.15.</strong> Disable your cape</a></li><li class="chapter-item expanded "><a href="needs-auth/credit-cards.html"><strong aria-hidden="true">5.16.</strong> View credit card information</a></li><li class="chapter-item expanded "><a href="needs-auth/change-password.html"><strong aria-hidden="true">5.17.</strong> Change user password</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Mojang API Documentation</a></li><li class="chapter-item expanded "><a href="no-auth/index.html"><strong aria-hidden="true">2.</strong> No authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="no-auth/sale-stats.html"><strong aria-hidden="true">2.1.</strong> Sale statistics</a></li><li class="chapter-item expanded "><a href="no-auth/blocked-servers.html"><strong aria-hidden="true">2.2.</strong> Blocked servers</a></li><li class="chapter-item expanded "><a href="no-auth/username-availability-partially-accurate.html"><strong aria-hidden="true">2.3.</strong> Username availability (partially accurate)</a></li><li class="chapter-item expanded "><a href="no-auth/username-to-uuid-get.html"><strong aria-hidden="true">2.4.</strong> Username to UUID (GET)</a></li><li class="chapter-item expanded "><a href="no-auth/username-to-uuid-post.html"><strong aria-hidden="true">2.5.</strong> Username to UUID (POST)</a></li><li class="chapter-item expanded "><a href="no-auth/uuid-to-username.html"><strong aria-hidden="true">2.6.</strong> UUID to username</a></li><li class="chapter-item expanded "><a href="no-auth/uuid-to-profile.html"><strong aria-hidden="true">2.7.</strong> UUID to user profile (skins, capes, etc.)</a></li><li class="chapter-item expanded "><a href="no-auth/name-history.html"><strong aria-hidden="true">2.8.</strong> Find profile's username history</a></li></ol></li><li class="chapter-item expanded "><a href="authentication/index.html"><strong aria-hidden="true">3.</strong> Authenticating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="authentication/bearers.html"><strong aria-hidden="true">3.1.</strong> A peek into Bearer tokens</a></li><li class="chapter-item expanded "><a href="authentication/msa.html"><strong aria-hidden="true">3.2.</strong> Authenticating a Microsoft account</a></li><li class="chapter-item expanded "><a href="authentication/mojang.html"><strong aria-hidden="true">3.3.</strong> Authenticating a Mojang account</a></li></ol></li><li class="chapter-item expanded "><a href="sq-flow/index.html"><strong aria-hidden="true">4.</strong> Security question-answer flow</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="sq-flow/list.html"><strong aria-hidden="true">4.1.</strong> List of security questions</a></li><li class="chapter-item expanded "><a href="sq-flow/check-if-sqs-needed.html"><strong aria-hidden="true">4.2.</strong> Check if security questions are needed</a></li><li class="chapter-item expanded "><a href="sq-flow/get-sqs.html"><strong aria-hidden="true">4.3.</strong> Get security questions</a></li><li class="chapter-item expanded "><a href="sq-flow/send-sq-answers.html"><strong aria-hidden="true">4.4.</strong> Send security answers</a></li></ol></li><li class="chapter-item expanded "><a href="needs-auth/index.html"><strong aria-hidden="true">5.</strong> Requires authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="needs-auth/redeem-gc.html"><strong aria-hidden="true">5.1.</strong> Redeem a giftcode / voucher</a></li><li class="chapter-item expanded "><a href="needs-auth/username-availability-accurate.html"><strong aria-hidden="true">5.2.</strong> Username availability (accurate)</a></li><li class="chapter-item expanded "><a href="needs-auth/create-profile.html"><strong aria-hidden="true">5.3.</strong> Create a Minecraft profile</a></li><li class="chapter-item expanded "><a href="needs-auth/check-if-owns-minecraft.html"><strong aria-hidden="true">5.4.</strong> Check if you own a copy of Minecraft</a></li><li class="chapter-item expanded "><a href="needs-auth/view-user.html"><strong aria-hidden="true">5.5.</strong> View user information</a></li><li class="chapter-item expanded "><a href="needs-auth/view-profile.html"><strong aria-hidden="true">5.6.</strong> View your profile information</a></li><li class="chapter-item expanded "><a href="needs-auth/view-profile-old-get.html"><strong aria-hidden="true">5.7.</strong> View your profile information (old) - GET</a></li><li class="chapter-item expanded "><a href="needs-auth/view-profile-old-post.html"><strong aria-hidden="true">5.8.</strong> View your profile information (old) - POST</a></li><li class="chapter-item expanded "><a href="needs-auth/name-change-eligibility.html"><strong aria-hidden="true">5.9.</strong> Name change eligibility</a></li><li class="chapter-item expanded "><a href="needs-auth/change-name.html"><strong aria-hidden="true">5.10.</strong> Change your account's username</a></li><li class="chapter-item expanded "><a href="needs-auth/check-skin.html"><strong aria-hidden="true">5.11.</strong> Check your account's skin (old)</a></li><li class="chapter-item expanded "><a href="needs-auth/change-skin.html"><strong aria-hidden="true">5.12.</strong> Change your account's skin</a></li><li class="chapter-item expanded "><a href="needs-auth/reset-skin.html"><strong aria-hidden="true">5.13.</strong> Reset your skin</a></li><li class="chapter-item expanded "><a href="needs-auth/check-capes.html"><strong aria-hidden="true">5.14.</strong> Check your account's capes (old)</a></li><li class="chapter-item expanded "><a href="needs-auth/change-cape.html"><strong aria-hidden="true">5.15.</strong> Change your enabled cape</a></li><li class="chapter-item expanded "><a href="needs-auth/disable-cape.html"><strong aria-hidden="true">5.16.</strong> Disable your cape</a></li><li class="chapter-item expanded "><a href="needs-auth/credit-cards.html"><strong aria-hidden="true">5.17.</strong> View credit card information</a></li><li class="chapter-item expanded "><a href="needs-auth/change-password.html"><strong aria-hidden="true">5.18.</strong> Change user password</a></li></ol></li><li class="chapter-item expanded "><a href="msa-migration/index.html"><strong aria-hidden="true">6.</strong> Microsoft account migration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="msa-migration/migration-status.html"><strong aria-hidden="true">6.1.</strong> Check migration status</a></li><li class="chapter-item expanded "><a href="msa-migration/migration-token.html"><strong aria-hidden="true">6.2.</strong> Get migration token</a></li><li class="chapter-item expanded "><a href="msa-migration/validate-msa-token.html"><strong aria-hidden="true">6.3.</strong> Validate a MSA token</a></li><li class="chapter-item expanded "><a href="msa-migration/link-msa.html"><strong aria-hidden="true">6.4.</strong> Link an account</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -116,10 +116,10 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
                         
@@ -166,8 +166,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#mojang-api-documentation" id="mojang-api-documentation">Mojang API Documentation</a></h1>
-<p>I'm sure this isn't complete. I know that there are old endpoints I've neglected to document, but that's because they no longer function (e.g old name change, block / reserve name, create Mojang account, redeem voucher (old), etc). <strong>Even then</strong>, I may have missed an endpoint or mistakenly documented something. If this is the case don't hesitate to reach out and let me know.</p>
-<p>This documentation wouldn't be possible without the following people:</p>
+<p><strong>Note:</strong> I've become quite busy with other things and haven't had the time I want to dedicate to updating these docs. I just released a new update, but the next update won't be for a while. Please contribute if you have the time, any contribution is greatly appreciated!</p>
+<p>I'm sure this isn't complete. I know that there are old endpoints I've neglected to document, but that's because they no longer function (e.g old name change, block / reserve name, create Mojang account, redeem voucher (old), etc). <strong>Even then</strong>, I may have missed an endpoint or mistakenly documented something. We all make mistakes, we're human after all. If I did make a mistake documenting something or something's changed since I last updated the docs, please don't hesitate to reach out and let me know via GitHub issue!</p>
+<p>The following is a list of people who have contributed to the docs in some way:</p>
 <ul>
 <li>Elias</li>
 <li>LukeTheHacker</li>
@@ -176,10 +177,15 @@
 <li>Dusks</li>
 <li>tanpug</li>
 <li>courtier</li>
-<li>Mary</li>
+<li>Trinity / overestimate</li>
 <li>danktrain</li>
+<li>fweak</li>
+<li>Caasi</li>
+<li>peet / wwhtrbbtt</li>
+<li>MohanadHosny</li>
+<li>Teun</li>
 </ul>
-<p>If I missed your credit, reach out. I want to give credit where credit is due.</p>
+<p>If I missed your credit, reach out by making a GitHub issue. I'd like to give credit where credit is due.</p>
 <p>Thanks to Luke especially for forking over the cash to purchase new copies of Minecraft for testing purposes.</p>
 <p>This documentation is open-source at <a href="https://github.com/88/mojang-api-docs">88/mojang-api-docs</a>, so feel free to contribute and add more endpoints / information that you find.</p>
 <p>Best wishes &amp; warmest regards!</p>
@@ -275,12 +281,13 @@ c800614f07e155ca842e23f84c6a553973ccdb1f
 dcc63fadc759ee712cdd5b7bade3bb3eff804637
 96ea6aaf66aea5881b38ebbf66df686e8613f1db
 </code></pre>
-<h1><a class="header" href="#username-availability-accurate" id="username-availability-accurate">Username availability (accurate)</a></h1>
+<h1><a class="header" href="#username-availability-partially-accurate" id="username-availability-partially-accurate">Username availability (partially accurate)</a></h1>
 <p>This is an undocumented endpoint that allows for the checking of usernames that have potentially been blocked, unlike <code>/users/profiles/minecraft/:username</code>.</p>
 <p>Keep in mind, this endpoint is not located on the normal Mojang API domain - instead, it is located on <code>account.mojang.com</code>.</p>
-<h3><a class="header" href="#a-quick-word-on-blocking" id="a-quick-word-on-blocking">A quick word on blocking</a></h3>
+<h3><a class="header" href="#a-quick-word-on-blocking-and-msas" id="a-quick-word-on-blocking-and-msas">A quick word on blocking and MSAs</a></h3>
 <p>Blocking can happen either one of two ways - a username sniper has blocked the name for 24 hours on an empty Mojang account, or the username has been blocked by Mojang's inappropriate name filter for whatever reason. The reasons names are blocked aren't public, but this is the best way to check if a name is blocked.</p>
 <p>If the name returns <code>204</code> on the normal Username to UUID endpoint, yet returns <code>TAKEN</code> here, it's either blocked or is pseudo-hard-deleted - the UUID exists in some parts of the API but not others. The username availability endpoint that does need authentication is more accurate than this endpoint, since it shows pseudo-hard-deleted accounts under <code>TAKEN</code> and blocked usernames under <code>NOT_ALLOWED</code>.</p>
+<p>Something else of note - this endpoint no longer properly functions with the introduction of Microsoft accounts. They falsely appear as <code>AVAILABLE</code> on this endpoint. Microsoft accounts that were migrated from Mojang accounts function correctly, only newly created Microsoft accounts do not function with this endpoint.</p>
 <h3><a class="header" href="#request-2" id="request-2">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
@@ -363,12 +370,16 @@ TAKEN
 </ul>
 <p>The JSON body of the request must look similar to this (of course, supplying your own usernames):</p>
 <pre><code class="language-json">[
-  &quot;lukethehacker23&quot;,
-  &quot;Hacker&quot;,
-  &quot;Unpredictable&quot;,
-  &quot;Await&quot;,
+  &quot;thx&quot;,
+  &quot;Dusks&quot;,
   &quot;tanpug&quot;,
-  &quot;Dusks&quot;
+  &quot;D__G&quot;,
+  &quot;Gr8_Escape&quot;,
+  &quot;Paradox&quot;,
+  &quot;Ooh&quot;,
+  &quot;Tremendous&quot;,
+  &quot;Hexene&quot;,
+  &quot;emotional&quot;
 ]
 </code></pre>
 <h3><a class="header" href="#response-4" id="response-4">Response</a></h3>
@@ -380,33 +391,54 @@ TAKEN
 // valid Minecraft profiles were found - they are sorted when returned
 [
   {
-    &quot;id&quot; : &quot;cdb5aee80f904fdda63ba16d38cd6b3b&quot;, // UUID of account
-    &quot;name&quot; : &quot;lukethehacker23&quot; // account username
+    &quot;id&quot;: &quot;6d752bb0ef41432a825a4d44185de121&quot;,
+    &quot;name&quot;: &quot;Gr8_Escape&quot;
   },
   {
-    &quot;id&quot; : &quot;e426cee9bd5044f6b4d9628b981d36a0&quot;, // UUID of account
-    &quot;name&quot; : &quot;Await&quot; // account username
+    &quot;id&quot;: &quot;7211ae0bdb3f4680ae7cb34f2c4befc0&quot;,
+    &quot;name&quot;: &quot;Hexene&quot;
   },
   {
-    &quot;id&quot; : &quot;8af296533b6844d085932742dca689c9&quot;, // UUID of account
-    &quot;name&quot; : &quot;Dusks&quot; // account username
+    &quot;id&quot;: &quot;8af296533b6844d085932742dca689c9&quot;,
+    &quot;name&quot;: &quot;Dusks&quot;
   },
   {
-    &quot;id&quot; : &quot;dd5e3b0b6d2440d2a740ebdbddb6e76b&quot;, // UUID of account
-    &quot;name&quot; : &quot;Hacker&quot; // account username
+    &quot;id&quot;: &quot;c7b3d49c580c4af2a824ca07b37ff2f9&quot;,
+    &quot;name&quot;: &quot;D__G&quot;
   },
   {
-    &quot;id&quot; : &quot;f0d9de88bbb54c9eae429cd8fbd693ab&quot;, // UUID of account
-    &quot;name&quot; : &quot;tanpug&quot; // account username
+    &quot;id&quot;: &quot;b3d0b85c9daf43d387f72696bdb618a1&quot;,
+    &quot;name&quot;: &quot;Paradox&quot;
   },
   {
-    &quot;id&quot; : &quot;c3d8e16622234b6bb6bcccf7907fb35a&quot;, // UUID of account
-    &quot;name&quot; : &quot;Unpredictable&quot; // account username
+    &quot;id&quot;: &quot;f0d9de88bbb54c9eae429cd8fbd693ab&quot;,
+    &quot;name&quot;: &quot;tanpug&quot;
+  },
+  {
+    &quot;id&quot;: &quot;42d414a31d3e456bb08864e254abfd54&quot;,
+    &quot;name&quot;: &quot;emotional&quot;
+  },
+  {
+    &quot;id&quot;: &quot;3e290b0243cf47f9801fa162ae7f0ff6&quot;,
+    &quot;name&quot;: &quot;Ooh&quot;
+  },
+  {
+    &quot;id&quot;: &quot;44717d8d18c8430184defff3a92167a0&quot;,
+    &quot;name&quot;: &quot;thx&quot;
+  },
+  {
+    &quot;id&quot;: &quot;7d96137e15a24f09b79f2366199d822e&quot;,
+    &quot;name&quot;: &quot;Tremendous&quot;
   }
 ]
 </code></pre>
+<p><strong>Note:</strong> You may have noticed that Microsoft profiles are returned first in the array, and sorted separately from Mojang profiles. Legacy profiles are returned last in the array and are also sorted separately. </p>
+<p>The order goes: MSA (sorted alphabetically, case-insensitive) --&gt; Mojang (sorted alphabetically, case-insensitive) --&gt; Legacy (sorted alphabetically, case-insensitive)</p>
 <p><strong>400: Bad Request</strong></p>
 <p>You could have gotten this error either because you've supplied an invalid username as one of the names in the array you sent as the POST body, because you supplied invalid JSON as the POST body, or because you supplied more than 10 names in the POST body.</p>
+<p>A list of invalid characters known to trigger this status code: <code>#&amp;\|/&quot;</code></p>
+<p>Names that are 26 characters and longer will also trigger this status code. </p>
+<p>Any name that is under 25 characters and fits the regex <code>^(?=.*?(\w|^)(\w|$))((?![#&amp;\\\|\/&quot;])\w){1,25}$</code> will not trigger this error.</p>
 <pre><code class="language-json">// invalid length
 {
   &quot;error&quot; : &quot;BadRequestException&quot;,
@@ -619,7 +651,7 @@ TAKEN
 }
 </code></pre>
 <h3><a class="header" href="#msa-tokens" id="msa-tokens">MSA Tokens</a></h3>
-<p>Microsoft Accounts are what Minecraft players will be logging in with very soon, so it's good to take a peek inside a MSA token! These are similar yet different in many ways to Yggdrasil tokens.</p>
+<p>Microsoft Accounts are what Minecraft players who made their accounts after December 1st, 2020 log in with, so it's good to take a peek inside a MSA token! These are similar yet different in many ways to Yggdrasil tokens.</p>
 <p>An example MSA token, when decoded (try with <a href="https://jwt.io/">the official JWT site</a>!), looks like this:</p>
 <pre><code class="language-json">{
   &quot;xuid&quot;: &quot;2533274805829568&quot;, // xUID (Xbox user identifier basically)
@@ -633,19 +665,152 @@ TAKEN
 }
 </code></pre>
 <h1><a class="header" href="#authenticating-a-microsoft-account" id="authenticating-a-microsoft-account">Authenticating a Microsoft account</a></h1>
-<p>This article aims to partially document how to log in to a Microsoft account to authenticate with Minecraft.</p>
+<p>This article aims to document how to log in to a Microsoft account to authenticate with Minecraft.</p>
 <p><strong>WARNING:</strong> This is not a finished article!</p>
-<p>First, you must obtain your XBL3.0 token. This <a href="https://stackoverflow.com/a/52111578">StackOverflow answer</a> shows a way to get the XBL3.0 token in Python. If you take a peek at the source of the referenced library, you can make your own token grabber in your own language. This will be documented at some point later on in time.</p>
-<p>Next, send a <code>POST</code> request to <code>https://api.minecraftservices.com/authentication/login_with_xbox</code>. The POST body should be similar to:</p>
+<p>There are two ways to authenticate a Microsoft account - via the email and password or via OAuth 2. Both ways will be outlined in this article.</p>
+<h2><a class="header" href="#email--password" id="email--password">Email &amp; Password</a></h2>
+<p><strong>Note:</strong> You will need to enable redirects with whatever request library you're using. You will also need to be able to see the final request URL after redirects.</p>
+<h3><a class="header" href="#preparing-to-log-in" id="preparing-to-log-in">Preparing to log in</a></h3>
+<p>Before we sign in, we first need to extract two values that we will need in order to sign in. </p>
+<p>Send a <code>GET</code> request to <code>https://login.live.com/oauth20_authorize.srf?client_id=000000004C12AE6F&amp;redirect_uri=https://login.live.com/oauth20_desktop.srf&amp;scope=service::user.auth.xboxlive.com::MBI_SSL&amp;display=touch&amp;response_type=token&amp;locale=en</code>, then in the page source find the <code>sFTTag</code> value:</p>
+<pre><code>sFTTag:'&lt;input type=&quot;hidden&quot; name=&quot;PPFT&quot; id=&quot;i0327&quot; value=&quot;Value we want is here!&quot;/&gt;'
+</code></pre>
+<p>In testing, using the regular expression <code>value=&quot;(.+?)&quot;</code> and extracting the first group is an easy way to extract this value. Save it, as it is needed for the second step.</p>
+<p>We also need to get the <code>urlPost</code> value from the page source:</p>
+<pre><code>urlPost:'The value we want is in here!'
+</code></pre>
+<p>The regular expression <code>urlPost:'(.+?)'</code> works fine for this, just extract the first group. Save this value. </p>
+<p>You may need to modify these regular expressions if, for example, the response text escapes single quotes.</p>
+<p>Take note that you <strong>CANNOT</strong> move on to the next step unless you have both of these values.</p>
+<h3><a class="header" href="#signing-in-to-microsoft" id="signing-in-to-microsoft">Signing in to Microsoft</a></h3>
+<p>Now that we have the required values, let's sign into Microsoft. In order to do this, we must send a <code>POST</code> request to the URL in the <code>urlPost</code> value we saved in the first step.</p>
+<p>The POST request must have the body of:</p>
+<pre><code>login=EMAIL_HERE&amp;loginfmt=EMAIL_HERE&amp;passwd=PASSWORD_HERE&amp;PPFT=SFTTAG_VALUE_HERE
+</code></pre>
+<p>Make sure you URL encode the email, password, and sFTTag value. The <code>Content-Type</code> header should be set to <code>application/x-www-form-urlencoded</code>. Make sure you also enable following redirects in whatever request library you use.</p>
+<p>After the request is done following all redirects, check if &quot;accessToken&quot; is present in the new URL, and if the new URL is the same as the <code>urlPost</code> URL that we first sent the request to. If both of these things are the case, the login failed. </p>
+<p>If the page source contains <code>&quot;Sign in to&quot;</code>, your credentials were wrong. If the page source contains <code>&quot;Help us protect your account&quot;</code>, 2-factor authentication is enabled on this account and must be removed or you need to enter your security information to confirm the login.</p>
+<p>Now we need to get the tokens that were returned inside this URL. Split the new URL by <code>#</code> so that you can get just the URL parameters and their values. You can then split the string again by <code>&amp;</code> to get each <code>param=value</code> pair, and again to each pair split by <code>=</code> to get the parameter name and value. Store these values however you wish.</p>
+<p>Some Python example code:</p>
+<pre><code class="language-python">raw_login_data = login_request.url.split(&quot;#&quot;)[1] # split the url to get the parameters
+login_data = dict(item.split(&quot;=&quot;) for item in raw_login_data.split(&quot;&amp;&quot;)) # create a dictionary of the parameters
+login_data[&quot;access_token&quot;] = requests.utils.unquote(login_data[&quot;access_token&quot;]) # URL decode the access token
+login_data[&quot;refresh_token&quot;] = requests.utils.unquote(login_data[&quot;refresh_token&quot;]) # URL decode the refresh token
+print(login_data) # print the data
+</code></pre>
+<p>This code returns the data in a <code>dict</code>, like so:</p>
+<pre><code class="language-python">{
+   'access_token': 'access token here',
+   'token_type': 'bearer',
+   'expires_in': '86400',
+   'scope': 'service::user.auth.xboxlive.com::MBI_SSL',
+   'refresh_token': 'refresh token here',
+   'user_id': 'user id here'
+}
+</code></pre>
+<p>Save the <code>access_token</code> value (and possibly the <code>refresh_token</code> value if you want!) and we can move on to the next step! Skip the &quot;OAuth 2&quot; section and move straight onto &quot;Signing into Minecraft&quot;!</p>
+<h2><a class="header" href="#oauth-2" id="oauth-2">OAuth 2</a></h2>
+<p><strong>Note:</strong> Before anything else, you must first get an OAuth 2 Client ID and Client Secret for your MSA. You can do this by clicking <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app">here</a> to register an Azure application.</p>
+<h3><a class="header" href="#logging-into-the-msa" id="logging-into-the-msa">Logging into the MSA</a></h3>
+<p>You must do this step in a browser.</p>
+<p>Navigate to the following URL: <code>https://login.live.com/oauth20_authorize.srf?client_id=AZURE_CLIENT_ID_HERE&amp;response_type=code&amp;redirect_uri=REDIRECT_URI_HERE&amp;scope=XboxLive.signin%20offline_access&amp;state=NOT_NEEDED</code>.</p>
+<p>From here, you'll be prompted to enter your MSA login information, and on a successful signin you'll be redirected to the following URL: <code>https://REDIRECT_URI_HERE?code=CODE_HERE&amp;state=NOT_NEEDED</code>. The <code>code</code> parameter must be extracted as you'll need this later on.</p>
+<h3><a class="header" href="#get-an-access-token" id="get-an-access-token">Get an access token</a></h3>
+<p>After you have your code, you need to get your access token. This needs your client secret from earlier. Keep this client secret safe!</p>
+<p>Then, send a <code>POST</code> request to <code>https://login.live.com/oauth20_token.srf</code> with the following POST body and the header <code>Content-Type: application/x-www-form-urlencoded</code>:</p>
+<pre><code>client_id=CLIENT_ID_HERE&amp;client_secret=CLIENT_SECRET_HERE&amp;code=CODE_FROM_PREVIOUS_STEP&amp;grant_type=authorization_code&amp;redirect_uri=REDIRECT_URI_HERE
+</code></pre>
+<p>If the request is successful, it will return a sample response such as this:</p>
 <pre><code class="language-json">{
-   &quot;identityToken&quot; : &quot;XBL3.0 x=uhs;xsts&quot;,
+    &quot;token_type&quot;: &quot;bearer&quot;,
+    &quot;expires_in&quot;: 86400,
+    &quot;scope&quot;: &quot;XboxLive.signin&quot;,
+    &quot;access_token&quot;: &quot;ACCESS_TOKEN_HERE&quot;,
+    &quot;refresh_token&quot;: &quot;M.R3_BAY.REFRESH_TOKEN_HERE&quot;,
+    &quot;user_id&quot;: &quot;USER_ID_HERE&quot;,
+    &quot;foci&quot;: &quot;1&quot;
+}
+</code></pre>
+<p>If you want to refresh an existing <code>access_token</code>, you can use the <code>refresh_token</code> and send a slightly different request - use the POST body:</p>
+<pre><code>client_id=CLIENT_ID_HERE&amp;client_secret=CLIENT_SECRET_HERE&amp;refresh_token=REFRESH_TOKEN_HERE&amp;grant_type=refresh_token&amp;redirect_uri=REDIRECT_URI_HERE
+</code></pre>
+<p>You will get the same response as shown above if the request is successful. Save the <code>access_token</code> and move onto &quot;Signing into Minecraft&quot;!</p>
+<h2><a class="header" href="#signing-into-minecraft" id="signing-into-minecraft">Signing into Minecraft</a></h2>
+<p>Now that we have signed into Microsoft, we can use the Microsoft access token in order to sign in to Minecraft. These steps are the same regardless of if you use OAuth 2 or plain email and password login.</p>
+<h3><a class="header" href="#signing-into-xbox-live" id="signing-into-xbox-live">Signing into Xbox Live</a></h3>
+<p>You now must sign into Xbox Live. In order to do this, you must send a <code>POST</code> request to <code>https://user.auth.xboxlive.com/user/authenticate</code> with the following body, and the headers <code>Content-Type: application/json</code> and <code>Accept: application/json</code>:</p>
+<pre><code class="language-json">{
+    &quot;Properties&quot;: {
+        &quot;AuthMethod&quot;: &quot;RPS&quot;,
+        &quot;SiteName&quot;: &quot;user.auth.xboxlive.com&quot;,
+        &quot;RpsTicket&quot;: &quot;ACCESS_TOKEN_HERE&quot;
+    },
+    &quot;RelyingParty&quot;: &quot;http://auth.xboxlive.com&quot;,
+    &quot;TokenType&quot;: &quot;JWT&quot;
+}
+</code></pre>
+<p>If all is successful, you will see a response similar to the below sample response:</p>
+<pre><code class="language-json">{
+    &quot;IssueInstant&quot;: &quot;2021-02-07T16:43:21.3324153Z&quot;,
+    &quot;NotAfter&quot;: &quot;2021-02-21T16:43:21.3324153Z&quot;,
+    &quot;Token&quot;: &quot;TOKEN_HERE&quot;,
+    &quot;DisplayClaims&quot;: {
+      &quot;xui&quot;: [
+         {
+            &quot;uhs&quot;: &quot;USER_HASH_HERE&quot;
+         }
+      ]
+    }
+}
+</code></pre>
+<p>Save the <code>Token</code> and the <code>uhs</code> values and move onto the next step!</p>
+<h3><a class="header" href="#getting-an-xsts-token" id="getting-an-xsts-token">Getting an XSTS token</a></h3>
+<p>This is the final step before we can log in with Minecraft! Send a <code>POST</code> request to <code>https://xsts.auth.xboxlive.com/xsts/authorize</code> with the following JSON body and the headers <code>Content-Type: application/json</code> and <code>Accept: application/json</code>:</p>
+<pre><code class="language-json">{
+    &quot;Properties&quot;: {
+        &quot;SandboxId&quot;: &quot;RETAIL&quot;,
+        &quot;UserTokens&quot;: [
+            &quot;TOKEN_HERE_FROM_PREVIOUS_STEP&quot;
+        ]
+    },
+    &quot;RelyingParty&quot;: &quot;rp://api.minecraftservices.com/&quot;,
+    &quot;TokenType&quot;: &quot;JWT&quot;
+}
+</code></pre>
+<p>You can either get a successful response or a 401 response.</p>
+<p><strong>Successful response:</strong></p>
+<pre><code class="language-json">{
+    &quot;IssueInstant&quot;: &quot;2021-02-07T21:41:03.6735105Z&quot;,
+    &quot;NotAfter&quot;: &quot;2021-02-08T13:41:03.6735105Z&quot;,
+    &quot;Token&quot;: &quot;SAVE_THIS_TOKEN&quot;,
+    &quot;DisplayClaims&quot;: {
+      &quot;xui&quot;: [
+         {
+            &quot;uhs&quot;: &quot;SAME_USER_HASH_AS_BEFORE&quot;
+         }
+      ]
+    }
+}
+</code></pre>
+<p><strong>401: Unauthorized</strong></p>
+<pre><code class="language-json">{
+    &quot;Identity&quot;: &quot;0&quot;,
+    &quot;XErr&quot;: 2148916238, // can either be 2148916238 (account belongs to someone under 18 and needs to be added to a family) or 2148916233 (account has no Xbox account, you must sign up for one first)
+    &quot;Message&quot;: &quot;&quot;,
+    &quot;Redirect&quot;: &quot;https://start.ui.xboxlive.com/AddChildToFamily&quot;
+}
+</code></pre>
+<h3><a class="header" href="#getting-the-bearer-token-for-minecraft" id="getting-the-bearer-token-for-minecraft">Getting the bearer token for Minecraft</a></h3>
+<p>Now, we can finally get the Minecraft bearer token. Send a <code>POST</code> request to <code>https://api.minecraftservices.com/authentication/login_with_xbox</code>. The POST body should be similar to:</p>
+<pre><code class="language-json">{
+   &quot;identityToken&quot; : &quot;XBL3.0 x=USER_HASH_HERE;XSTS_TOKEN_FROM_PREVIOUS_STEP&quot;,
    &quot;ensureLegacyEnabled&quot; : true
 }
 </code></pre>
 <p>You must send this request with the <code>Content-Type: application/json</code> header.</p>
 <p>You will get a response similar to this:</p>
 <pre><code class="language-json">{
-  &quot;username&quot; : &quot;830491e6-50e9-e9ed-6e8a-7041f4fef585&quot;, // Xbox account username
+  &quot;username&quot; : &quot;830491e6-50e9-e9ed-6e8a-7041f4fef585&quot;, // Xbox account username (?)
   &quot;roles&quot; : [ ], // i suppose this will have something in it if the account has a copy of Minecraft
   &quot;access_token&quot; : &quot;eyJhbGciOiJIUzI1NiJ9.eyJ4dWlkIjoiMjUzMzI3NDgwNTgyOTU2OCIsInN1YiI6IjgzMDQ5MWU2LTUwZTktZTllZC02ZThhLTcwNDFmNGZlZjU4NSIsIm5iZiI6MTYwNjg0NTE0Niwicm9sZXMiOltdLCJpc3MiOiJhdXRoZW50aWNhdGlvbiIsImV4cCI6MTYwNjkzMTU0NiwiaWF0IjoxNjA2ODQ1MTQ2LCJ5dWlkIjoiNTRmYzUwYzFiMWJjMTlkZDEwOWZiZWZmOWQxMWJmNDEifQ.-7H1jT3i54gmbqQcUBdHArOn-Jr8eZVAyPDiOr5q_XY&quot;, // access token
   &quot;token_type&quot; : &quot;Bearer&quot;, // don't think there are other types
@@ -655,7 +820,6 @@ TAKEN
 <p>The <code>access_token</code> is what you will now use to authenticate yourself to other API endpoints.</p>
 <p>See the &quot;A peek into Bearer tokens&quot; article for more information about what's inside the <code>access_token</code>.</p>
 <h1><a class="header" href="#authenticating-a-mojang-account" id="authenticating-a-mojang-account">Authenticating a Mojang account</a></h1>
-<p><strong>Warning: This article is DEPRECATED. Mojang is migrating existing Mojang accounts to Microsoft accounts in early 2021 and won't be supporting this method of authentication anymore. This article's aim is to show how to authenticate Mojang accounts if you have one from before December 1st, 2020, when Mojang switched to Microsoft's system for all new users.</strong></p>
 <p>In order to use any of the endpoints on Mojang's API that require authentication, we of course need to be authenticated. This article goes through how to authenticate a user via Mojang's <code>authserver</code>, codename Yggdrasil, to get an authorization token we can use.</p>
 <p>Keep in mind, this endpoint is not on the main Mojang API domain, instead using <code>authserver.mojang.com</code>.</p>
 <h3><a class="header" href="#request-8" id="request-8">Request</a></h3>
@@ -672,21 +836,22 @@ TAKEN
 <p>The POST body should fit this format:</p>
 <pre><code class="language-json">{
   &quot;agent&quot; : {
-    &quot;name&quot; : &quot;Minecraft&quot;, // identifying which game is connecting
-    &quot;version&quot; : 1
-  },
+    &quot;name&quot; : &quot;Minecraft&quot;, // identifying which game is connecting, &quot;Scrolls&quot; returns Scrolls profile info
+    &quot;version&quot; : 1 // version of the agent (OPTIONAL)
+  }, // you don't even need this! &quot;agent&quot; : &quot;minecraft&quot; works fine too.
   &quot;username&quot; : &quot;testuser@domain.tld&quot;, // username (legacy) or email address
   &quot;password&quot; : &quot;CoolPassw0rd!34^&quot;, // password
   &quot;clientToken&quot; : &quot;Mojang-API-Client&quot;, // client token used to identify yourself (OPTIONAL)
-  &quot;requestUser&quot; : &quot;true&quot; // request a response back containing user information
+  &quot;requestUser&quot; : &quot;true&quot; // request a response back containing user information (OPTIONAL)
 }
 </code></pre>
+<p><strong>Note:</strong> If <code>clientToken</code> is <code>null</code> or not provided in the POST body, Yggdrasil will generate a random UUIDv4 as the <code>clientToken</code>.</p>
 <p>Interestingly enough, Mojang only cares about the first 72 characters of a user's password. You don't need to supply any more characters, but if you do and if you get any more characters wrong, it'll still let you in.</p>
 <h3><a class="header" href="#response-8" id="response-8">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>We have successfully authenticated. Below is a sample response of what you would recieve when you are successfully authenticated:</p>
 <pre><code class="language-json">{
-  &quot;user&quot; : { // Mojang user info
+  &quot;user&quot; : { // Mojang user info (only when requestUser is true)
     &quot;properties&quot; : [ // user properties (MAY NOT BE RETURNED.)
       {
         &quot;name&quot; : &quot;preferredLanguage&quot;, // which language system emails will be sent in
@@ -736,6 +901,12 @@ TAKEN
   &quot;error&quot; : &quot;ForbiddenOperationException&quot;,
   &quot;errorMessage&quot; : &quot;Invalid credentials. Account migrated, use email as username.&quot;,
   &quot;cause&quot; : &quot;UserMigratedException&quot;
+}
+
+// did not include the &quot;username&quot; value in POST body
+{
+  &quot;error&quot; : &quot;ForbiddenOperationException&quot;,
+  &quot;errorMessage&quot; : &quot;Forbidden&quot;
 }
 </code></pre>
 <p><strong>405: Method Not Allowed</strong></p>
@@ -1028,9 +1199,9 @@ TAKEN
   &quot;error&quot; : &quot;No value present&quot;
 }
 </code></pre>
-<h1><a class="header" href="#username-availability-accurate-1" id="username-availability-accurate-1">Username availability (accurate)</a></h1>
+<h1><a class="header" href="#username-availability-accurate" id="username-availability-accurate">Username availability (accurate)</a></h1>
 <p>This endpoint allows for the checking of usernames that have potentially been blocked, unlike <code>/users/profiles/minecraft/:username</code>.</p>
-<h3><a class="header" href="#a-quick-word-on-blocking-1" id="a-quick-word-on-blocking-1">A quick word on blocking</a></h3>
+<h3><a class="header" href="#a-quick-word-on-blocking" id="a-quick-word-on-blocking">A quick word on blocking</a></h3>
 <p>Blocking can happen either one of two ways - a username sniper has blocked the name for 24 hours on an empty Mojang account, or the username has been blocked by Mojang's inappropriate name filter for whatever reason. The reasons names are blocked aren't public, but this is the best way to check if a name is blocked.</p>
 <h3><a class="header" href="#request-13" id="request-13">Request</a></h3>
 <ul>
@@ -1074,6 +1245,16 @@ TAKEN
   &quot;developerMessage&quot; : &quot;Unauthorized&quot;
 }
 </code></pre>
+<p><strong>405: Method Not Allowed</strong></p>
+<p>This error occurs when you have not set the HTTP method of the request to <code>GET</code>.</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/minecraft/profile/name/:username/available&quot;,
+  &quot;errorType&quot;: &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;error&quot;: &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;errorMessage&quot;: &quot;Method Not Allowed&quot;,
+  &quot;developerMessage&quot;: &quot;Method Not Allowed&quot;
+}
+</code></pre>
 <p><strong>429: Too Many Requests</strong></p>
 <p>If you have sent too many requests in a specific amount of time, this error will appear.</p>
 <pre><code class="language-json">{
@@ -1084,10 +1265,9 @@ TAKEN
   &quot;developerMessage&quot; : &quot;The client has sent too many requests within a certain amount of time&quot;
 }
 </code></pre>
-<p><strong>TODO: Fill in other responses if any</strong></p>
 <h1><a class="header" href="#create-a-minecraft-profile" id="create-a-minecraft-profile">Create a Minecraft profile</a></h1>
 <p>This endpoint allows a user with a redeemed giftcode on their account to create a Minecraft profile.</p>
-<p><strong>Note:</strong> This endpoint has a ratelimit of 6-10 requests per minute.</p>
+<p>This endpoint has a ratelimit of 6 requests per account and 60 requests per IP.</p>
 <h3><a class="header" href="#request-14" id="request-14">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>POST</code></li>
@@ -1220,9 +1400,81 @@ TAKEN
   &quot;error&quot; : &quot;Connect Error: Too many outstanding acquire operations&quot;
 }
 </code></pre>
+<h1><a class="header" href="#check-if-you-own-a-copy-of-minecraft" id="check-if-you-own-a-copy-of-minecraft">Check if you own a copy of Minecraft</a></h1>
+<p>This endpoint allows an authenticated user to check if they own a copy of Minecraft.</p>
+<h3><a class="header" href="#request-15" id="request-15">Request</a></h3>
+<ul>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Endpoint:</strong> <code>/entitlements/mcstore</code></li>
+<li><strong>Full URL:</strong> <code>https://api.minecraftservices.com/entitlements/mcstore</code></li>
+<li><strong>Headers:</strong>
+<ul>
+<li><code>Authorization: Bearer [JWT/auth token here]</code></li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#response-15" id="response-15">Response</a></h3>
+<p><strong>200: OK</strong></p>
+<p>Successfully retrieved the account entitlements.</p>
+<pre><code class="language-json">// when you do own a copy of the game
+{
+  &quot;items&quot;: [
+    {
+      &quot;name&quot;: &quot;product_minecraft&quot;,
+      &quot;signature&quot;: &quot;JWT here&quot;
+    },
+    {
+      &quot;name&quot;: &quot;game_minecraft&quot;,
+      &quot;signature&quot;: &quot;JWT here&quot;
+    }
+  ],
+  &quot;signature&quot;: &quot;JWT here&quot;,
+  &quot;keyId&quot;: &quot;1&quot;
+}
+
+// when you do not own a copy of the game
+{
+  &quot;items&quot;: [],
+  &quot;signature&quot;: &quot;JWT here&quot;,
+  &quot;keyId&quot;: &quot;1&quot;
+}
+</code></pre>
+<p>If you do not own a copy of Minecraft, the <code>items</code> array will be empty.</p>
+<p>Inside the <code>signature</code> JWTs for <code>product_minecraft</code> and <code>game_minecraft</code>, the body is:</p>
+<pre><code class="language-json">{
+  &quot;signerId&quot;: &quot;2575459622728545&quot;,
+  &quot;name&quot;: &quot;game_minecraft&quot; // can also be product_minecraft
+}
+</code></pre>
+<p>Inside the <code>signature</code> JWT that is outside the <code>items</code> array, the body is:</p>
+<pre><code class="language-json">{
+  &quot;entitlements&quot;: [
+    {
+      &quot;name&quot;: &quot;product_minecraft&quot;
+    },
+    {
+      &quot;name&quot;: &quot;game_minecraft&quot;
+    }
+  ],
+  &quot;signerId&quot;: &quot;2575459622728545&quot;,
+  &quot;nbf&quot;: 1624461990,
+  &quot;exp&quot;: 1624634970,
+  &quot;iat&quot;: 1624462170
+}
+</code></pre>
+<p><strong>400: Bad Request</strong></p>
+<p>This status code is returned when you are trying to use a Mojang account with this endpoint.</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/entitlements/mcstore&quot;,
+  &quot;errorType&quot;: &quot;Bad Request&quot;,
+  &quot;error&quot;: &quot;Bad Request&quot;,
+  &quot;errorMessage&quot;: &quot;Required JWT [user] not specified&quot;,
+  &quot;developerMessage&quot;: &quot;Required JWT [user] not specified&quot;
+}
+</code></pre>
 <h1><a class="header" href="#view-user-information" id="view-user-information">View user information</a></h1>
 <p>This endpoint allows an authenticated user to view their user information (birthday, <code>userId</code> value, email, if it has security questions, etc).</p>
-<h3><a class="header" href="#request-15" id="request-15">Request</a></h3>
+<h3><a class="header" href="#request-16" id="request-16">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint:</strong> <code>/user</code></li>
@@ -1234,7 +1486,7 @@ TAKEN
 </li>
 </ul>
 <p>You must have answered your security questions described in the Security Question-Answer Flow article in order to use this endpoint.</p>
-<h3><a class="header" href="#response-15" id="response-15">Response</a></h3>
+<h3><a class="header" href="#response-16" id="response-16">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors occurred when fetching user information. Sample response below (for both migrated / Mojang accounts and unmigrated / legacy accounts):</p>
 <pre><code class="language-json">// migrated account (Mojang account)
@@ -1271,7 +1523,7 @@ TAKEN
 </code></pre>
 <h1><a class="header" href="#view-your-profile-information" id="view-your-profile-information">View your profile information</a></h1>
 <p>This endpoint allows for an authenticated user to view information about their Minecraft profile.</p>
-<h3><a class="header" href="#request-16" id="request-16">Request</a></h3>
+<h3><a class="header" href="#request-17" id="request-17">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile</code></li>
@@ -1282,7 +1534,7 @@ TAKEN
 </ul>
 </li>
 </ul>
-<h3><a class="header" href="#response-16" id="response-16">Response</a></h3>
+<h3><a class="header" href="#response-17" id="response-17">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors were encountered when fetching your profile information. Sample response:</p>
 <pre><code class="language-json">{
@@ -1313,10 +1565,20 @@ TAKEN
   &quot;developerMessage&quot; : &quot;Unauthorized&quot;
 }
 </code></pre>
+<p><strong>404: Not Found</strong></p>
+<p>You are trying to view the profile of an account that does not own a copy of Minecraft.</p>
+<pre><code class="language-json">{
+  &quot;path&quot; : &quot;/minecraft/profile&quot;,
+  &quot;errorType&quot; : &quot;NOT_FOUND&quot;,
+  &quot;error&quot; : &quot;NOT_FOUND&quot;,
+  &quot;errorMessage&quot; : &quot;The server has not found anything matching the request URI&quot;,
+  &quot;developerMessage&quot; : &quot;The server has not found anything matching the request URI&quot;
+}
+</code></pre>
 <h1><a class="header" href="#view-your-profile-information-old---get" id="view-your-profile-information-old---get">View your profile information (old) - GET</a></h1>
 <p>This endpoint allows for an authenticated user to view information about their Minecraft profile.</p>
 <p>There are two endpoints that do this task. Both are identical in function, however the URLs slightly differ.</p>
-<h3><a class="header" href="#request-17" id="request-17">Request</a></h3>
+<h3><a class="header" href="#request-18" id="request-18">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint 1:</strong> <code>/user/profiles</code></li>
@@ -1330,7 +1592,7 @@ TAKEN
 </li>
 </ul>
 <p>You must have answered your security questions described in the Security Question-Answer Flow article in order to use this endpoint.</p>
-<h3><a class="header" href="#response-17" id="response-17">Response</a></h3>
+<h3><a class="header" href="#response-18" id="response-18">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors were encountered when fetching your profile information. Sample response:</p>
 <pre><code class="language-json">[
@@ -1342,6 +1604,7 @@ TAKEN
     &quot;createdAt&quot;: 1587576665000, // date the profile was made premium
     &quot;legacyProfile&quot;: false, // is the profile legacy / unmigrated?
     &quot;suspended&quot;: false, // ???
+    &quot;tokenId&quot;: &quot;21580755&quot;, // ??? internal identifier, only appears for accounts created as Mojang accounts, NOT accounts that were previously unmigrated/legacy
     &quot;paid&quot;: true, // is the profile paid?
     &quot;migrated&quot;: false // ??? this appears as false for migrated (Mojang) accounts as well
   }
@@ -1350,14 +1613,14 @@ TAKEN
 <p><strong>401: Unauthorized</strong></p>
 <p>This error occurs when you either haven't answered your security questions, or when you've passed an invalid or expired Bearer token in the <code>Authorization</code> header.</p>
 <pre><code class="language-json">{
-  &quot;error&quot; : &quot;UnauthorizedOperationException&quot;,
-  &quot;errorMessage&quot; : &quot;User not authenticated&quot;
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;errorMessage&quot;: &quot;The request requires user authentication&quot;
 }
 </code></pre>
 <h1><a class="header" href="#view-your-profile-information-old---post" id="view-your-profile-information-old---post">View your profile information (old) - POST</a></h1>
 <p>This endpoint allows for an authenticated user to view information about their Minecraft profile.</p>
 <p>There are two endpoints that do this task. Both are identical in function, however the URLs slightly differ.</p>
-<h3><a class="header" href="#request-18" id="request-18">Request</a></h3>
+<h3><a class="header" href="#request-19" id="request-19">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>POST</code></li>
 <li><strong>Endpoint 1:</strong> <code>/user/profiles</code></li>
@@ -1378,7 +1641,7 @@ TAKEN
 }
 </code></pre>
 <p>You can also input literally anything else in the JSON body, e.g <code>{&quot;test&quot; : &quot;test&quot;}</code>, and it'll show your profile information, unless you provide a JSON body similar to <code>{&quot;name&quot; : &quot;name that is not tied to your Bearer token&quot;}</code>. In that case it will output an empty array.</p>
-<h3><a class="header" href="#response-18" id="response-18">Response</a></h3>
+<h3><a class="header" href="#response-19" id="response-19">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors were encountered when fetching your profile information. If you provided an IGN that is not tied to your Bearer token, the array will be empty. Sample response:</p>
 <pre><code class="language-json">// for an IGN that is tied to your Bearer token
@@ -1405,14 +1668,14 @@ TAKEN
 <p><strong>401: Unauthorized</strong></p>
 <p>This error occurs when you either haven't answered your security questions, or when you've passed an invalid or expired Bearer token in the <code>Authorization</code> header.</p>
 <pre><code class="language-json">{
-  &quot;error&quot; : &quot;UnauthorizedOperationException&quot;,
-  &quot;errorMessage&quot; : &quot;User not authenticated&quot;
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;errorMessage&quot;: &quot;The request requires user authentication&quot;
 }
 </code></pre>
 <h1><a class="header" href="#name-change-eligibility" id="name-change-eligibility">Name change eligibility</a></h1>
 <p>This endpoint allows a user with a Minecraft profile to check if they are able to change their username (30 day cooldown).</p>
 <p>This endpoint also allows a user to view the date their account was made premium, this includes legacy / unmigrated users.</p>
-<h3><a class="header" href="#request-19" id="request-19">Request</a></h3>
+<h3><a class="header" href="#request-20" id="request-20">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile/namechange</code></li>
@@ -1423,7 +1686,7 @@ TAKEN
 </ul>
 </li>
 </ul>
-<h3><a class="header" href="#response-19" id="response-19">Response</a></h3>
+<h3><a class="header" href="#response-20" id="response-20">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>This seems to be the only status code returned, save for 401 and 429.</p>
 <pre><code class="language-json">{
@@ -1454,7 +1717,8 @@ TAKEN
 </code></pre>
 <h1><a class="header" href="#change-your-accounts-username" id="change-your-accounts-username">Change your account's username</a></h1>
 <p>This endpoint allows a user with a Minecraft profile to change their account's username.</p>
-<h3><a class="header" href="#request-20" id="request-20">Request</a></h3>
+<p>This endpoint has a ratelimit of 3 requests per account and per IP.</p>
+<h3><a class="header" href="#request-21" id="request-21">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>PUT</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile/name/:username</code></li>
@@ -1466,7 +1730,7 @@ TAKEN
 </li>
 </ul>
 <p>The only URL parameter is <code>username</code>, your desired username.</p>
-<h3><a class="header" href="#response-20" id="response-20">Response</a></h3>
+<h3><a class="header" href="#response-21" id="response-21">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>You have successfully changed your account's username!</p>
 <pre><code class="language-json">// just returns normal user profile response
@@ -1502,7 +1766,7 @@ TAKEN
   &quot;developerMessage&quot; : &quot;changeProfileName.profileName: Invalid profile name&quot;
 }
 </code></pre>
-<p>If interested, invalid length validation takes priority over invalid name violation, it seems.</p>
+<p>If interested, invalid length validation takes priority over invalid name validation, it seems.</p>
 <p><strong>401: Unauthorized</strong></p>
 <p>You have not provided a valid JWT / auth token, or you have neglected to provide the <code>Authorization</code> header at all.</p>
 <pre><code class="language-json">{
@@ -1514,16 +1778,47 @@ TAKEN
 }
 </code></pre>
 <p><strong>403: Forbidden</strong></p>
-<p>If this error occurs, you are either trying to change the username of an account that has already changed its username in the past 30 days, <strong>OR</strong> you are trying to change the username of your account to a name that has already been taken or is still on cooldown.</p>
+<p>If this error occurs, you are either trying to change the username of an account that has already changed its username in the past 30 days, <strong>OR</strong> you are trying to change the username of your account to a name that has already been taken or is still on cooldown. </p>
+<p>This error can also occur if you are trying to change an account's name that has not had its security questions answered, from what I have tested.</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/minecraft/profile/name/:username&quot;,
+  &quot;errorType&quot;: &quot;FORBIDDEN&quot;,
+  &quot;error&quot;: &quot;FORBIDDEN&quot;,
+  &quot;errorMessage&quot;: &quot;Could not change name for profile&quot;,
+  &quot;developerMessage&quot;: &quot;Could not change name for profile&quot;,
+  &quot;details&quot;: {
+    &quot;status&quot;: &quot;DUPLICATE&quot;
+  }
+}
+</code></pre>
+<p><strong>404: Not Found</strong></p>
+<p>If this error occurs, you are trying to change the username of an account that does not own a copy of Minecraft.</p>
 <pre><code class="language-json">{
   &quot;path&quot; : &quot;/minecraft/profile/name/:username&quot;,
-  &quot;errorType&quot; : &quot;FORBIDDEN&quot;,
-  &quot;error&quot; : &quot;FORBIDDEN&quot;
+  &quot;errorMessage&quot; : &quot;Could not find profile&quot;,
+  &quot;developerMessage&quot; : &quot;Could not find profile&quot;
+}
+</code></pre>
+<p><strong>405: Method Not Allowed</strong></p>
+<p>If this error occurs, you have not set the request method to <code>PUT</code>.</p>
+<pre><code class="language-json">{
+  &quot;path&quot; : &quot;/minecraft/profile/name/:username&quot;,
+  &quot;errorType&quot; : &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;error&quot; : &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;errorMessage&quot; : &quot;Method Not Allowed&quot;,
+  &quot;developerMessage&quot; : &quot;Method Not Allowed&quot;
 }
 </code></pre>
 <p><strong>429: Too Many Requests</strong></p>
-<p>If you have sent too many requests in a specific amount of time (3 requests every 60 seconds seems to be the limit), this error will appear.</p>
-<pre><code class="language-json">{
+<p>If you have sent too many requests in a specific amount of time (3 requests per account and per IP), this error will appear. </p>
+<p>Two responses are noted here, one at the most recent time of testing (June 14, 2021), and the other from some point in January 2021.</p>
+<pre><code class="language-json">// got this error when I last tested this endpoint (June 14, 2021)
+{
+  &quot;path&quot; : &quot;/minecraft/profile/name/:username&quot;
+}
+
+// older error, I didn't get this error the most recent time I tested the endpoint
+{
   &quot;path&quot; : &quot;/minecraft/profile/name/:username&quot;,
   &quot;errorType&quot; : &quot;TooManyRequestsException&quot;,
   &quot;error&quot; : &quot;TooManyRequestsException&quot;,
@@ -1532,7 +1827,7 @@ TAKEN
 }
 </code></pre>
 <p><strong>500: Internal Server Error</strong></p>
-<p>If this status code is returned, you are most likely trying to change the username of an account that has security questions enabled, which you have not answered. Other issues could cause this error as well, for example if the API is being overloaded.</p>
+<p>This error may be caused due to the API overloading with requests.</p>
 <pre><code class="language-json">{
   &quot;path&quot; : &quot;/minecraft/profile/name/:username&quot;,
   &quot;errorType&quot; : &quot;EXTERNAL_API_ERROR&quot;,
@@ -1544,7 +1839,7 @@ TAKEN
 <h1><a class="header" href="#check-your-accounts-skin-old" id="check-your-accounts-skin-old">Check your account's skin (old)</a></h1>
 <p>This endpoint allows an authenticated user to view information about their applied Minecraft skin.</p>
 <p><strong>Note:</strong> This endpoint is now deprecated. Use the &quot;View profile information&quot; endpoint instead.</p>
-<h3><a class="header" href="#request-21" id="request-21">Request</a></h3>
+<h3><a class="header" href="#request-22" id="request-22">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint:</strong> <code>/user/profile/:uuid/skins</code></li>
@@ -1556,7 +1851,7 @@ TAKEN
 </li>
 </ul>
 <p>The only URL parameter here is <code>uuid</code>, the UUID tied to your Minecraft profile &amp; Bearer token.</p>
-<h3><a class="header" href="#response-21" id="response-21">Response</a></h3>
+<h3><a class="header" href="#response-22" id="response-22">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors occurred while fetching skin information. Sample response below:</p>
 <pre><code class="language-json">[
@@ -1592,7 +1887,7 @@ TAKEN
 </code></pre>
 <h1><a class="header" href="#change-your-accounts-skin" id="change-your-accounts-skin">Change your account's skin</a></h1>
 <p>This endpoint allows an authenticated user to set their skin.</p>
-<h3><a class="header" href="#request-22" id="request-22">Request</a></h3>
+<h3><a class="header" href="#request-23" id="request-23">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>POST</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile/skins</code></li>
@@ -1614,7 +1909,7 @@ file: [binary file]
   &quot;variant&quot; : &quot;slim&quot; // model of skin. slim - alex, classic - steve
 }
 </code></pre>
-<h3><a class="header" href="#response-22" id="response-22">Response</a></h3>
+<h3><a class="header" href="#response-23" id="response-23">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>Set skin successfully. Profile information is sent as a response. Sample response:</p>
 <pre><code class="language-json">{
@@ -1647,7 +1942,7 @@ file: [binary file]
 </code></pre>
 <h1><a class="header" href="#reset-your-skin" id="reset-your-skin">Reset your skin</a></h1>
 <p>This endpoint allows an authenticated user to reset their skin back to the predetermined Alex / Steve skin (depending on Java HashCode of their UUID).</p>
-<h3><a class="header" href="#request-23" id="request-23">Request</a></h3>
+<h3><a class="header" href="#request-24" id="request-24">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>DELETE</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile/skins/active</code></li>
@@ -1658,7 +1953,7 @@ file: [binary file]
 </ul>
 </li>
 </ul>
-<h3><a class="header" href="#response-23" id="response-23">Response</a></h3>
+<h3><a class="header" href="#response-24" id="response-24">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>Reset skin successfully. Profile information is sent as a response. Sample response:</p>
 <pre><code class="language-json">{
@@ -1692,7 +1987,7 @@ file: [binary file]
 <h1><a class="header" href="#check-your-accounts-capes" id="check-your-accounts-capes">Check your account's capes</a></h1>
 <p>This endpoint allows an authenticated user to view information about their owned Minecraft capes.</p>
 <p><strong>Note:</strong> This endpoint is now deprecated. Use the &quot;View profile information&quot; endpoint instead.</p>
-<h3><a class="header" href="#request-24" id="request-24">Request</a></h3>
+<h3><a class="header" href="#request-25" id="request-25">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint:</strong> <code>/user/profile/:uuid/cape</code></li>
@@ -1704,7 +1999,7 @@ file: [binary file]
 </li>
 </ul>
 <p>The only URL parameter here is <code>uuid</code>, the UUID tied to your Minecraft profile &amp; Bearer token.</p>
-<h3><a class="header" href="#response-24" id="response-24">Response</a></h3>
+<h3><a class="header" href="#response-25" id="response-25">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors occurred while fetching cape information. An empty array (<code>[]</code>) is returned if the account has no capes. Sample response below:</p>
 <pre><code class="language-json">// if account has capes
@@ -1742,7 +2037,7 @@ file: [binary file]
 </code></pre>
 <h1><a class="header" href="#change-your-enabled-cape" id="change-your-enabled-cape">Change your enabled cape</a></h1>
 <p>This endpoint allows an authenticated user to change their enabled cape to another one that they own.</p>
-<h3><a class="header" href="#request-25" id="request-25">Request</a></h3>
+<h3><a class="header" href="#request-26" id="request-26">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>PUT</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile/capes/active</code></li>
@@ -1759,7 +2054,7 @@ file: [binary file]
    &quot;capeId&quot; : &quot;402d2b1a-48a5-4177-8173-85b0d1d04889&quot; // 2013 cape ID, replace with the cape ID of the cape you want to change to. use the new &quot;View your profile information&quot; endpoint.
 }
 </code></pre>
-<h3><a class="header" href="#response-25" id="response-25">Response</a></h3>
+<h3><a class="header" href="#response-26" id="response-26">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>Changed cape successfully. Profile information is sent as a response. Sample response:</p>
 <pre><code class="language-json">{
@@ -1800,7 +2095,7 @@ file: [binary file]
 </code></pre>
 <h1><a class="header" href="#disable-your-cape" id="disable-your-cape">Disable your cape</a></h1>
 <p>This endpoint allows any user with a cape to disable it and not have it shown. You can always reactivate it if you choose to disable it.</p>
-<h3><a class="header" href="#request-26" id="request-26">Request</a></h3>
+<h3><a class="header" href="#request-27" id="request-27">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>DELETE</code></li>
 <li><strong>Endpoint:</strong> <code>/minecraft/profile/capes/active</code></li>
@@ -1811,7 +2106,7 @@ file: [binary file]
 </ul>
 </li>
 </ul>
-<h3><a class="header" href="#response-26" id="response-26">Response</a></h3>
+<h3><a class="header" href="#response-27" id="response-27">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>Reset cape successfully. Profile information is sent as a response. Sample response:</p>
 <pre><code class="language-json">{
@@ -1845,7 +2140,7 @@ file: [binary file]
 <h1><a class="header" href="#view-credit-card-information" id="view-credit-card-information">View credit card information</a></h1>
 <p>This endpoint allows an authenticated user to see any credit card information that they have stored.</p>
 <p>You must have answered your security questions described in the Security Question-Answer Flow article in order to use this endpoint.</p>
-<h3><a class="header" href="#request-27" id="request-27">Request</a></h3>
+<h3><a class="header" href="#request-28" id="request-28">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>GET</code></li>
 <li><strong>Endpoint:</strong> <code>/creditcards</code></li>
@@ -1856,7 +2151,7 @@ file: [binary file]
 </ul>
 </li>
 </ul>
-<h3><a class="header" href="#response-27" id="response-27">Response</a></h3>
+<h3><a class="header" href="#response-28" id="response-28">Response</a></h3>
 <p><strong>200: OK</strong></p>
 <p>No errors were encountered while fetching credit card information. If you have not saved any credit cards, the returned JSON will be an empty array, <code>[]</code>. Sample responses below:</p>
 <pre><code class="language-json">[
@@ -1874,7 +2169,7 @@ file: [binary file]
     &quot;userId&quot; : &quot;88a4eeb5bd5a4640aa3865878aec6d6b&quot;, // internal Mojang account identifier
     &quot;last4&quot; : &quot;4272&quot;, // last 4 digits of the card
     &quot;cardType&quot; : &quot;Visa&quot;, // visa/mastercard/etc
-    &quot;provider&quot; : &quot;braintree&quot;, // payment provider used - there could also be be &quot;moneybookers&quot;, &quot;ayden&quot;, &quot;skrill&quot;, &quot;dibs&quot;, &quot;paypal&quot;
+    &quot;provider&quot; : &quot;braintree&quot;, // payment provider used - this could also be &quot;moneybookers&quot;, &quot;ayden&quot;, &quot;skrill&quot;, &quot;dibs&quot;, &quot;paypal&quot;
     &quot;paymentInfo&quot; : &quot;434283**4272&quot;, // redacted credit card number
     &quot;createdAt&quot; : 1597463065000, // when was the credit card added?
     &quot;storedInVaultAt&quot; : 1597463067000, // when was the credit card stored?
@@ -1891,7 +2186,7 @@ file: [binary file]
 </code></pre>
 <h1><a class="header" href="#change-user-password" id="change-user-password">Change user password</a></h1>
 <p>This endpoint allows an authenticated user on a Mojang account to change their password.</p>
-<h3><a class="header" href="#request-28" id="request-28">Request</a></h3>
+<h3><a class="header" href="#request-29" id="request-29">Request</a></h3>
 <ul>
 <li><strong>Method:</strong> <code>PUT</code></li>
 <li><strong>Endpoint:</strong> <code>/users/password</code></li>
@@ -1909,7 +2204,7 @@ file: [binary file]
   &quot;password&quot; : &quot;6ipo8Y%GMxM544V%$h*&amp;M*#%7!D*897%&quot; // new password
 }
 </code></pre>
-<h3><a class="header" href="#response-28" id="response-28">Response</a></h3>
+<h3><a class="header" href="#response-29" id="response-29">Response</a></h3>
 <p><strong>204: No Content</strong></p>
 <p>The password has been changed successfully. You must log in to your account again. There is no response for this status code.</p>
 <p><strong>400: Bad Request</strong></p>
@@ -1925,12 +2220,258 @@ file: [binary file]
   &quot;error&quot; : &quot;JsonParseException&quot;,
   &quot;errorMessage&quot; : &quot;Unexpected character ('\&quot;' (code 34)): was expecting comma to separate Object entries\n at [Source: (org.eclipse.jetty.server.HttpInputOverHTTP); line: 1, column: 29]&quot;
 }
+
+// this body (apparently) is sent in some cases. not sure what triggers it.
+{
+  &quot;error&quot; : &quot;IllegalArgumentException&quot;,
+  &quot;errorMessage&quot; : &quot;Unsecure request&quot;
+}
 </code></pre>
 <p><strong>401: Unauthorized</strong></p>
-<p>You have not provided a valid JWT / auth token, or you have neglected to provide the <code>Authorization</code> header at all.</p>
+<p>You have not provided a valid JWT / auth token, or you failed to answer security questions, or you have neglected to provide the <code>Authorization</code> header at all.</p>
 <pre><code class="language-json">{
   &quot;error&quot; : &quot;Unauthorized&quot;,
   &quot;errorMessage&quot; : &quot;The request requires user authentication&quot;
+}
+</code></pre>
+<h1><a class="header" href="#microsoft-account-migration" id="microsoft-account-migration">Microsoft account migration</a></h1>
+<p>The following sections of the API documentation relate to the upcoming Microsoft account migration.</p>
+<p><strong>NOTE:</strong> These docs are unfinished.</p>
+<p>These docs were submitted by Dusks via DM to me on Discord, and I've formatted them and posted here + added a bit more data to them. Thank you, Dusks! Some endpoints have also been documented by fweak.</p>
+<ul>
+<li><a href="msa-migration/./migration-status.html">Check migration status</a></li>
+<li><a href="msa-migration/./migration-token.html">Get migration token</a></li>
+<li><a href="msa-migration/./validate-msa-token.html">Validate a MSA token</a></li>
+<li><a href="msa-migration/./link-msa.html">Link an account</a></li>
+</ul>
+<h1><a class="header" href="#check-migration-status" id="check-migration-status">Check migration status</a></h1>
+<p>This endpoint allows an authenticated user to check if they are eligible for MSA migration.</p>
+<p>These docs were submitted by Dusks via DM to me on Discord, and I've formatted them and posted here + added a bit more data to them. Thank you, Dusks! Some endpoints have also been documented by fweak.</p>
+<h3><a class="header" href="#request-30" id="request-30">Request</a></h3>
+<ul>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Endpoint:</strong> <code>/rollout/v1/msamigration</code></li>
+<li><strong>Full URL:</strong> <code>https://api.minecraftservices.com/rollout/v1/msamigration</code></li>
+<li><strong>Headers:</strong>
+<ul>
+<li><code>Authorization: Bearer [JWT/auth token here]</code></li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#response-30" id="response-30">Response</a></h3>
+<p><strong>200: OK</strong></p>
+<p>Successfully fetched migration status. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;feature&quot;: &quot;msamigration&quot;,
+  &quot;rollout&quot;: false
+}
+</code></pre>
+<p><strong>401: Unauthorized</strong></p>
+<p>You provided an invalid Bearer token or neglected to fill in the <code>Authorization</code> header entirely.</p>
+<p>No body is returned for this response.</p>
+<h1><a class="header" href="#get-migration-token" id="get-migration-token">Get migration token</a></h1>
+<p>This endpoint allows an authenticated user to get their migration token, used later for Microsoft Account (MSA) migration.</p>
+<p><strong>NOTE:</strong> These docs are unfinished.</p>
+<p>These docs were submitted by Dusks via DM to me on Discord, and I've formatted them and posted here + added a bit more data to them. Thank you, Dusks! Some endpoints have also been documented by fweak.</p>
+<h3><a class="header" href="#request-31" id="request-31">Request</a></h3>
+<ul>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Endpoint:</strong> <code>/migration/token</code></li>
+<li><strong>Full URL:</strong> <code>https://api.minecraftservices.com/migration/token</code></li>
+<li><strong>Headers:</strong>
+<ul>
+<li><code>Authorization: Bearer [JWT/auth token here]</code></li>
+<li><code>Content-Type: application/json</code></li>
+</ul>
+</li>
+</ul>
+<p>The POST body for this request should be similar to this:</p>
+<pre><code class="language-json">{
+  &quot;sessionEmail&quot;: &quot;cooluser@gmail.com&quot; // current email of the Mojang account
+}
+</code></pre>
+<p><strong>Note:</strong> This endpoint can also be used with the <code>GET</code> method with no body and no <code>Content-Type</code> header, and will return the same data. Status code 400 will not occur with the <code>GET</code> method.</p>
+<h3><a class="header" href="#response-31" id="response-31">Response</a></h3>
+<p><strong>200: OK</strong></p>
+<p>Got token successfully. Sample response:</p>
+<pre><code class="language-json">eyJhbGciOiJSUzI1NiIsIng1dCI6Ik1waTNjYlliNHJpWWwzcVl1YzFOTm5HeDdvOCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FwaS5taW5lY3JhZnRzZXJ2aWNlcy5jb20iLCJhdWQiOiJodHRwOi8vbG9naW4ubGl2ZS5jb20iLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2MTg2ODczMzksImV4cCI6MTYxODY4ODUzOSwibmJmIjoxNjE4Njg3MzM5LCJhZGRyZXNzIjp7ImNvdW50cnkiOiJ0d29fbGV0dGVyX2NvdW50cnlfY29kZSJ9LCJiaXJ0aGRhdGUiOiJZWVlZLU1NLUREIiwiZW1haWwiOiJlbWFpbF9vZl9tb2phbmdfYWNjb3VudEBkb21haW4udGxkIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9.qLmgkntcdORU35vplL0989N6kd7-ZKz43ZEYwhMcyrIH13bIs7SlHCbmTDW9s0HN2W9x3RSJZCZ5Eh6K3b5K8PTvfI1QQn4m84UBuZa0GQz0KQcDHhxWd_XTByoqWaEwbSUqWr95WdyMUHU7FqF9-eYnQTtmWw6tF6SxXWYnR7Ub4mQyb96hL1Jo5zF1U6yykipMbnG4i3LAd9SsRpTtgCWPioMa2UWb_ETHDQwvc7Jz1YsPi4oOSqZJpIEqJQO8W1oQt9Th_1XY0W4Qr3iK0LSosVrEr55mB2soNHuQg4FK4pvGoUYfdm_1Yn2ikjpIwB6_PZdNpdK3D9275hUjsA
+</code></pre>
+<p><strong>400: Bad Request</strong></p>
+<p>You have provided an incorrect email as the <code>sessionEmail</code>, or neglected to provide a POST body entirely.</p>
+<pre><code class="language-json">// incorrect email (always returned with legacy accounts, even with the correct email or email hash)
+{
+  &quot;path&quot;: &quot;/migration/token&quot;,
+  &quot;errorMessage&quot;: &quot;Supplied e-mail doesn't match account e-mail&quot;,
+  &quot;developerMessage&quot;: &quot;Supplied e-mail doesn't match account e-mail&quot;
+}
+
+// did not pass an email 
+{
+  &quot;path&quot;: &quot;/migration/token&quot;,
+  &quot;errorType&quot;: &quot;CONSTRAINT_VIOLATION&quot;,
+  &quot;error&quot;: &quot;CONSTRAINT_VIOLATION&quot;,
+  &quot;errorMessage&quot;: &quot;getMigrationToken.tokenRequest.sessionEmail: must not be blank&quot;,
+  &quot;developerMessage&quot;: &quot;getMigrationToken.tokenRequest.sessionEmail: must not be blank&quot;
+}
+
+// blank POST data
+{
+  &quot;path&quot;: &quot;/migration/token&quot;,
+  &quot;errorType&quot;: &quot;Bad Request&quot;,
+  &quot;error&quot;: &quot;Bad Request&quot;,
+  &quot;errorMessage&quot;: &quot;Required Body [tokenRequest] not specified&quot;,
+  &quot;developerMessage&quot;: &quot;Required Body [tokenRequest] not specified&quot;
+}
+</code></pre>
+<p><strong>401: Unauthorized</strong></p>
+<p>You provided an invalid Bearer token or neglected to fill in the <code>Authorization</code> header entirely.</p>
+<p>No body is returned for this response.</p>
+<p><strong>403: Forbidden</strong></p>
+<p>This status code is returned when you try to get your token with a MSA (already migrated or newly created).</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/token&quot;,
+  &quot;errorType&quot;: &quot;FORBIDDEN&quot;,
+  &quot;error&quot;: &quot;FORBIDDEN&quot;
+}
+</code></pre>
+<p><strong>500: Internal Server Error</strong></p>
+<p>In testing as of June 20, 2021, I have not observed this to occur with unmigrated / legacy accounts as previously noted here.</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/token&quot;
+}
+</code></pre>
+<h1><a class="header" href="#validate-a-msa-token" id="validate-a-msa-token">Validate a MSA token</a></h1>
+<p>This endpoint allows an authenticated user to validate a MSA token.</p>
+<p><strong>NOTE:</strong> These docs are unfinished.</p>
+<p>These docs were submitted by Dusks via DM to me on Discord, and I've formatted them and posted here + added a bit more data to them. Thank you, Dusks! Some endpoints have also been documented by fweak.</p>
+<h3><a class="header" href="#request-32" id="request-32">Request</a></h3>
+<ul>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Endpoint:</strong> <code>/migration/validate</code></li>
+<li><strong>Full URL:</strong> <code>https://api.minecraftservices.com/migration/validate</code></li>
+<li><strong>Headers:</strong>
+<ul>
+<li><code>Authorization: Bearer [JWT/auth token here]</code></li>
+</ul>
+</li>
+</ul>
+<p>The POST body should be similar to this:</p>
+<pre><code class="language-json">{
+  &quot;identityToken&quot;: &quot;XBL3.0 x=XUID_HERE;JWT_HERE&quot;
+}
+</code></pre>
+<h3><a class="header" href="#response-32" id="response-32">Response</a></h3>
+<p><strong>400: Bad Request</strong></p>
+<p>You are given this response if you neglect to insert a POST body or if the <code>identityToken</code> is blank.</p>
+<pre><code class="language-json">// no POST body
+{
+  &quot;path&quot;: &quot;/migration/validate&quot;,
+  &quot;errorType&quot;: &quot;BAD_REQUEST&quot;,
+  &quot;error&quot;: &quot;BAD_REQUEST&quot;,
+  &quot;errorMessage&quot;: &quot;Bad Request&quot;,
+  &quot;developerMessage&quot;: &quot;Bad Request&quot;
+}
+
+// identityToken is blank
+{
+  &quot;path&quot;: &quot;/migration/validate&quot;,
+  &quot;errorType&quot;: &quot;CONSTRAINT_VIOLATION&quot;,
+  &quot;error&quot;: &quot;CONSTRAINT_VIOLATION&quot;,
+  &quot;errorMessage&quot;: &quot;validate.request.identityToken: must not be blank&quot;,
+  &quot;developerMessage&quot;: &quot;validate.request.identityToken: must not be blank&quot;
+}
+</code></pre>
+<p><strong>401: Unauthorized</strong></p>
+<p>You provided an invalid Bearer token or neglected to fill in the <code>Authorization</code> header entirely. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/validate&quot;,
+  &quot;errorType&quot;: &quot;UNAUTHORIZED&quot;,
+  &quot;error&quot;: &quot;UNAUTHORIZED&quot;
+}
+</code></pre>
+<p><strong>405: Method Not Allowed</strong></p>
+<p>You used the wrong HTTP method for this request. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/validate&quot;,
+  &quot;errorType&quot;: &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;error&quot;: &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;errorMessage&quot;: &quot;Method Not Allowed&quot;,
+  &quot;developerMessage&quot;: &quot;Method Not Allowed&quot;
+}
+</code></pre>
+<p><strong>409: Conflict</strong></p>
+<p>This is the current response for this endpoint when given a valid <code>identityToken</code>. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/validate&quot;,
+  &quot;errorType&quot;: &quot;NOT_ELIGIBLE&quot;,
+  &quot;error&quot;: &quot;NOT_ELIGIBLE&quot;
+}
+</code></pre>
+<h1><a class="header" href="#link-an-account" id="link-an-account">Link an account</a></h1>
+<p>This endpoint allows an authenticated user to link their MSA to their Mojang account.</p>
+<p><strong>NOTE:</strong> These docs are unfinished.</p>
+<p>These docs were submitted by Dusks via DM to me on Discord, and I've formatted them and posted here + added a bit more data to them. Thank you, Dusks! Some endpoints have also been documented by fweak.</p>
+<h3><a class="header" href="#request-33" id="request-33">Request</a></h3>
+<ul>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Endpoint:</strong> <code>/migration/link</code></li>
+<li><strong>Full URL:</strong> <code>https://api.minecraftservices.com/migration/link</code></li>
+<li><strong>Headers:</strong>
+<ul>
+<li><code>Authorization: Bearer [JWT/auth token here]</code></li>
+</ul>
+</li>
+</ul>
+<p>The POST body should be similar to this:</p>
+<pre><code class="language-json">{
+  &quot;identityToken&quot;: &quot;XBL3.0 x=XUID_HERE;JWT_HERE&quot;
+}
+</code></pre>
+<h3><a class="header" href="#response-33" id="response-33">Response</a></h3>
+<p><strong>400: Bad Request</strong></p>
+<p>You are given this response if you neglect to insert a POST body or if the <code>identityToken</code> is blank.</p>
+<pre><code class="language-json">// no POST body
+{
+  &quot;path&quot;: &quot;/migration/link&quot;,
+  &quot;errorType&quot;: &quot;BAD_REQUEST&quot;,
+  &quot;error&quot;: &quot;BAD_REQUEST&quot;,
+  &quot;errorMessage&quot;: &quot;Bad Request&quot;,
+  &quot;developerMessage&quot;: &quot;Bad Request&quot;
+}
+
+// identityToken is blank
+{
+  &quot;path&quot;: &quot;/migration/link&quot;,
+  &quot;errorType&quot;: &quot;CONSTRAINT_VIOLATION&quot;,
+  &quot;error&quot;: &quot;CONSTRAINT_VIOLATION&quot;,
+  &quot;errorMessage&quot;: &quot;linkAsync.migrationRequest.identityToken: must not be blank&quot;,
+  &quot;developerMessage&quot;: &quot;linkAsync.migrationRequest.identityToken: must not be blank&quot;
+}
+</code></pre>
+<p><strong>401: Unauthorized</strong></p>
+<p>You provided an invalid Bearer token or neglected to fill in the <code>Authorization</code> header entirely. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/link&quot;,
+  &quot;errorType&quot;: &quot;UNAUTHORIZED&quot;,
+  &quot;error&quot;: &quot;UNAUTHORIZED&quot;
+}
+</code></pre>
+<p><strong>405: Method Not Allowed</strong></p>
+<p>You used the wrong HTTP method for this request. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/link&quot;,
+  &quot;errorType&quot;: &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;error&quot;: &quot;METHOD_NOT_ALLOWED&quot;,
+  &quot;errorMessage&quot;: &quot;Method Not Allowed&quot;,
+  &quot;developerMessage&quot;: &quot;Method Not Allowed&quot;
+}
+</code></pre>
+<p><strong>409: Conflict</strong></p>
+<p>This is the current response for this endpoint when given a valid <code>identityToken</code>. Sample response:</p>
+<pre><code class="language-json">{
+  &quot;path&quot;: &quot;/migration/link&quot;,
+  &quot;errorType&quot;: &quot;NOT_ELIGIBLE&quot;,
+  &quot;error&quot;: &quot;NOT_ELIGIBLE&quot;
 }
 </code></pre>
 
