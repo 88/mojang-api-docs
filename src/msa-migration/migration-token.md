@@ -1,6 +1,8 @@
 # Get migration token
 This endpoint allows an authenticated user to get their migration token, used later for Microsoft Account (MSA) migration.
 
+**NOTE:** These docs are unfinished.
+
 These docs were submitted by Dusks via DM to me on Discord, and I've formatted them and posted here + added a bit more data to them. Thank you, Dusks! Some endpoints have also been documented by fweak.
 
 ### Request
@@ -35,7 +37,7 @@ eyJhbGciOiJSUzI1NiIsIng1dCI6Ik1waTNjYlliNHJpWWwzcVl1YzFOTm5HeDdvOCIsInR5cCI6IkpX
 You have provided an incorrect email as the `sessionEmail`, or neglected to provide a POST body entirely.
 
 ```json
-// incorrect email
+// incorrect email (always returned with legacy accounts, even with the correct email or email hash)
 {
   "path": "/migration/token",
   "errorMessage": "Supplied e-mail doesn't match account e-mail",
@@ -81,7 +83,7 @@ This status code is returned when you try to get your token with a MSA (already 
 
 **500: Internal Server Error**
 
-You are trying to use this endpoint with an unmigrated account.
+In testing as of June 20, 2021, I have not observed this to occur with unmigrated / legacy accounts as previously noted here.
 
 ```json
 {

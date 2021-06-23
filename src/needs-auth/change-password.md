@@ -25,7 +25,7 @@ The password has been changed successfully. You must log in to your account agai
 
 **400: Bad Request**
 
-This status code is returned if the old password provided is invalid, or if you have supplied an invalid JSON body. It can also be returned if you are trying to change your account's password without answering the security questions.
+This status code is returned if the old password provided is invalid, or if you have supplied an invalid JSON body.
 
 ```json
 // when old password is invalid
