@@ -1,6 +1,9 @@
 [book]
-authors = ["what", "Elias", "LukeTheHacker", "nx", "HX7", "Dusks", "tanpug"]
+authors = ["too many to update each time check readme"]
 language = "en"
 multilingual = false
 src = "src"
 title = "Mojang API Documentation"
+
+[output.html]
+default-theme = "navy"

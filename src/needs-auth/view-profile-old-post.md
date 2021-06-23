@@ -59,7 +59,7 @@ This error occurs when you either haven't answered your security questions, or w
 
 ```json
 {
-  "error" : "UnauthorizedOperationException",
-  "errorMessage" : "User not authenticated"
+  "error": "Unauthorized",
+  "errorMessage": "The request requires user authentication"
 }
 ```

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="sidebar-visible no-js navy">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -50,7 +50,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -76,7 +76,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('navy')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Mojang API Documentation</a></li><li class="chapter-item expanded "><a href="../no-auth/index.html"><strong aria-hidden="true">2.</strong> No authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../no-auth/sale-stats.html"><strong aria-hidden="true">2.1.</strong> Sale statistics</a></li><li class="chapter-item expanded "><a href="../no-auth/blocked-servers.html"><strong aria-hidden="true">2.2.</strong> Blocked servers</a></li><li class="chapter-item expanded "><a href="../no-auth/username-availability-accurate.html"><strong aria-hidden="true">2.3.</strong> Username availability (accurate)</a></li><li class="chapter-item expanded "><a href="../no-auth/username-to-uuid-get.html"><strong aria-hidden="true">2.4.</strong> Username to UUID (GET)</a></li><li class="chapter-item expanded "><a href="../no-auth/username-to-uuid-post.html"><strong aria-hidden="true">2.5.</strong> Username to UUID (POST)</a></li><li class="chapter-item expanded "><a href="../no-auth/uuid-to-username.html"><strong aria-hidden="true">2.6.</strong> UUID to username</a></li><li class="chapter-item expanded "><a href="../no-auth/uuid-to-profile.html"><strong aria-hidden="true">2.7.</strong> UUID to user profile (skins, capes, etc.)</a></li><li class="chapter-item expanded "><a href="../no-auth/name-history.html"><strong aria-hidden="true">2.8.</strong> Find profile's username history</a></li></ol></li><li class="chapter-item expanded "><a href="../authentication/index.html"><strong aria-hidden="true">3.</strong> Authenticating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../authentication/bearers.html"><strong aria-hidden="true">3.1.</strong> A peek into Bearer tokens</a></li><li class="chapter-item expanded "><a href="../authentication/msa.html" class="active"><strong aria-hidden="true">3.2.</strong> Authenticating a Microsoft account</a></li><li class="chapter-item expanded "><a href="../authentication/mojang.html"><strong aria-hidden="true">3.3.</strong> Authenticating a Mojang account</a></li></ol></li><li class="chapter-item expanded "><a href="../sq-flow/index.html"><strong aria-hidden="true">4.</strong> Security question-answer flow</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sq-flow/list.html"><strong aria-hidden="true">4.1.</strong> List of security questions</a></li><li class="chapter-item expanded "><a href="../sq-flow/check-if-sqs-needed.html"><strong aria-hidden="true">4.2.</strong> Check if security questions are needed</a></li><li class="chapter-item expanded "><a href="../sq-flow/get-sqs.html"><strong aria-hidden="true">4.3.</strong> Get security questions</a></li><li class="chapter-item expanded "><a href="../sq-flow/send-sq-answers.html"><strong aria-hidden="true">4.4.</strong> Send security answers</a></li></ol></li><li class="chapter-item expanded "><a href="../needs-auth/index.html"><strong aria-hidden="true">5.</strong> Requires authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../needs-auth/redeem-gc.html"><strong aria-hidden="true">5.1.</strong> Redeem a giftcode / voucher</a></li><li class="chapter-item expanded "><a href="../needs-auth/username-availability-accurate.html"><strong aria-hidden="true">5.2.</strong> Username availability (accurate)</a></li><li class="chapter-item expanded "><a href="../needs-auth/create-profile.html"><strong aria-hidden="true">5.3.</strong> Create a Minecraft profile</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-user.html"><strong aria-hidden="true">5.4.</strong> View user information</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-profile.html"><strong aria-hidden="true">5.5.</strong> View your profile information</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-profile-old-get.html"><strong aria-hidden="true">5.6.</strong> View your profile information (old) - GET</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-profile-old-post.html"><strong aria-hidden="true">5.7.</strong> View your profile information (old) - POST</a></li><li class="chapter-item expanded "><a href="../needs-auth/name-change-eligibility.html"><strong aria-hidden="true">5.8.</strong> Name change eligibility</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-name.html"><strong aria-hidden="true">5.9.</strong> Change your account's username</a></li><li class="chapter-item expanded "><a href="../needs-auth/check-skin.html"><strong aria-hidden="true">5.10.</strong> Check your account's skin (old)</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-skin.html"><strong aria-hidden="true">5.11.</strong> Change your account's skin</a></li><li class="chapter-item expanded "><a href="../needs-auth/reset-skin.html"><strong aria-hidden="true">5.12.</strong> Reset your skin</a></li><li class="chapter-item expanded "><a href="../needs-auth/check-capes.html"><strong aria-hidden="true">5.13.</strong> Check your account's capes (old)</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-cape.html"><strong aria-hidden="true">5.14.</strong> Change your enabled cape</a></li><li class="chapter-item expanded "><a href="../needs-auth/disable-cape.html"><strong aria-hidden="true">5.15.</strong> Disable your cape</a></li><li class="chapter-item expanded "><a href="../needs-auth/credit-cards.html"><strong aria-hidden="true">5.16.</strong> View credit card information</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-password.html"><strong aria-hidden="true">5.17.</strong> Change user password</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Mojang API Documentation</a></li><li class="chapter-item expanded "><a href="../no-auth/index.html"><strong aria-hidden="true">2.</strong> No authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../no-auth/sale-stats.html"><strong aria-hidden="true">2.1.</strong> Sale statistics</a></li><li class="chapter-item expanded "><a href="../no-auth/blocked-servers.html"><strong aria-hidden="true">2.2.</strong> Blocked servers</a></li><li class="chapter-item expanded "><a href="../no-auth/username-availability-partially-accurate.html"><strong aria-hidden="true">2.3.</strong> Username availability (partially accurate)</a></li><li class="chapter-item expanded "><a href="../no-auth/username-to-uuid-get.html"><strong aria-hidden="true">2.4.</strong> Username to UUID (GET)</a></li><li class="chapter-item expanded "><a href="../no-auth/username-to-uuid-post.html"><strong aria-hidden="true">2.5.</strong> Username to UUID (POST)</a></li><li class="chapter-item expanded "><a href="../no-auth/uuid-to-username.html"><strong aria-hidden="true">2.6.</strong> UUID to username</a></li><li class="chapter-item expanded "><a href="../no-auth/uuid-to-profile.html"><strong aria-hidden="true">2.7.</strong> UUID to user profile (skins, capes, etc.)</a></li><li class="chapter-item expanded "><a href="../no-auth/name-history.html"><strong aria-hidden="true">2.8.</strong> Find profile's username history</a></li></ol></li><li class="chapter-item expanded "><a href="../authentication/index.html"><strong aria-hidden="true">3.</strong> Authenticating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../authentication/bearers.html"><strong aria-hidden="true">3.1.</strong> A peek into Bearer tokens</a></li><li class="chapter-item expanded "><a href="../authentication/msa.html" class="active"><strong aria-hidden="true">3.2.</strong> Authenticating a Microsoft account</a></li><li class="chapter-item expanded "><a href="../authentication/mojang.html"><strong aria-hidden="true">3.3.</strong> Authenticating a Mojang account</a></li></ol></li><li class="chapter-item expanded "><a href="../sq-flow/index.html"><strong aria-hidden="true">4.</strong> Security question-answer flow</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sq-flow/list.html"><strong aria-hidden="true">4.1.</strong> List of security questions</a></li><li class="chapter-item expanded "><a href="../sq-flow/check-if-sqs-needed.html"><strong aria-hidden="true">4.2.</strong> Check if security questions are needed</a></li><li class="chapter-item expanded "><a href="../sq-flow/get-sqs.html"><strong aria-hidden="true">4.3.</strong> Get security questions</a></li><li class="chapter-item expanded "><a href="../sq-flow/send-sq-answers.html"><strong aria-hidden="true">4.4.</strong> Send security answers</a></li></ol></li><li class="chapter-item expanded "><a href="../needs-auth/index.html"><strong aria-hidden="true">5.</strong> Requires authentication</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../needs-auth/redeem-gc.html"><strong aria-hidden="true">5.1.</strong> Redeem a giftcode / voucher</a></li><li class="chapter-item expanded "><a href="../needs-auth/username-availability-accurate.html"><strong aria-hidden="true">5.2.</strong> Username availability (accurate)</a></li><li class="chapter-item expanded "><a href="../needs-auth/create-profile.html"><strong aria-hidden="true">5.3.</strong> Create a Minecraft profile</a></li><li class="chapter-item expanded "><a href="../needs-auth/check-if-owns-minecraft.html"><strong aria-hidden="true">5.4.</strong> Check if you own a copy of Minecraft</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-user.html"><strong aria-hidden="true">5.5.</strong> View user information</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-profile.html"><strong aria-hidden="true">5.6.</strong> View your profile information</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-profile-old-get.html"><strong aria-hidden="true">5.7.</strong> View your profile information (old) - GET</a></li><li class="chapter-item expanded "><a href="../needs-auth/view-profile-old-post.html"><strong aria-hidden="true">5.8.</strong> View your profile information (old) - POST</a></li><li class="chapter-item expanded "><a href="../needs-auth/name-change-eligibility.html"><strong aria-hidden="true">5.9.</strong> Name change eligibility</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-name.html"><strong aria-hidden="true">5.10.</strong> Change your account's username</a></li><li class="chapter-item expanded "><a href="../needs-auth/check-skin.html"><strong aria-hidden="true">5.11.</strong> Check your account's skin (old)</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-skin.html"><strong aria-hidden="true">5.12.</strong> Change your account's skin</a></li><li class="chapter-item expanded "><a href="../needs-auth/reset-skin.html"><strong aria-hidden="true">5.13.</strong> Reset your skin</a></li><li class="chapter-item expanded "><a href="../needs-auth/check-capes.html"><strong aria-hidden="true">5.14.</strong> Check your account's capes (old)</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-cape.html"><strong aria-hidden="true">5.15.</strong> Change your enabled cape</a></li><li class="chapter-item expanded "><a href="../needs-auth/disable-cape.html"><strong aria-hidden="true">5.16.</strong> Disable your cape</a></li><li class="chapter-item expanded "><a href="../needs-auth/credit-cards.html"><strong aria-hidden="true">5.17.</strong> View credit card information</a></li><li class="chapter-item expanded "><a href="../needs-auth/change-password.html"><strong aria-hidden="true">5.18.</strong> Change user password</a></li></ol></li><li class="chapter-item expanded "><a href="../msa-migration/index.html"><strong aria-hidden="true">6.</strong> Microsoft account migration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../msa-migration/migration-status.html"><strong aria-hidden="true">6.1.</strong> Check migration status</a></li><li class="chapter-item expanded "><a href="../msa-migration/migration-token.html"><strong aria-hidden="true">6.2.</strong> Get migration token</a></li><li class="chapter-item expanded "><a href="../msa-migration/validate-msa-token.html"><strong aria-hidden="true">6.3.</strong> Validate a MSA token</a></li><li class="chapter-item expanded "><a href="../msa-migration/link-msa.html"><strong aria-hidden="true">6.4.</strong> Link an account</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -114,10 +114,10 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
                         
@@ -164,19 +164,152 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#authenticating-a-microsoft-account" id="authenticating-a-microsoft-account">Authenticating a Microsoft account</a></h1>
-<p>This article aims to partially document how to log in to a Microsoft account to authenticate with Minecraft.</p>
+<p>This article aims to document how to log in to a Microsoft account to authenticate with Minecraft.</p>
 <p><strong>WARNING:</strong> This is not a finished article!</p>
-<p>First, you must obtain your XBL3.0 token. This <a href="https://stackoverflow.com/a/52111578">StackOverflow answer</a> shows a way to get the XBL3.0 token in Python. If you take a peek at the source of the referenced library, you can make your own token grabber in your own language. This will be documented at some point later on in time.</p>
-<p>Next, send a <code>POST</code> request to <code>https://api.minecraftservices.com/authentication/login_with_xbox</code>. The POST body should be similar to:</p>
+<p>There are two ways to authenticate a Microsoft account - via the email and password or via OAuth 2. Both ways will be outlined in this article.</p>
+<h2><a class="header" href="#email--password" id="email--password">Email &amp; Password</a></h2>
+<p><strong>Note:</strong> You will need to enable redirects with whatever request library you're using. You will also need to be able to see the final request URL after redirects.</p>
+<h3><a class="header" href="#preparing-to-log-in" id="preparing-to-log-in">Preparing to log in</a></h3>
+<p>Before we sign in, we first need to extract two values that we will need in order to sign in. </p>
+<p>Send a <code>GET</code> request to <code>https://login.live.com/oauth20_authorize.srf?client_id=000000004C12AE6F&amp;redirect_uri=https://login.live.com/oauth20_desktop.srf&amp;scope=service::user.auth.xboxlive.com::MBI_SSL&amp;display=touch&amp;response_type=token&amp;locale=en</code>, then in the page source find the <code>sFTTag</code> value:</p>
+<pre><code>sFTTag:'&lt;input type=&quot;hidden&quot; name=&quot;PPFT&quot; id=&quot;i0327&quot; value=&quot;Value we want is here!&quot;/&gt;'
+</code></pre>
+<p>In testing, using the regular expression <code>value=&quot;(.+?)&quot;</code> and extracting the first group is an easy way to extract this value. Save it, as it is needed for the second step.</p>
+<p>We also need to get the <code>urlPost</code> value from the page source:</p>
+<pre><code>urlPost:'The value we want is in here!'
+</code></pre>
+<p>The regular expression <code>urlPost:'(.+?)'</code> works fine for this, just extract the first group. Save this value. </p>
+<p>You may need to modify these regular expressions if, for example, the response text escapes single quotes.</p>
+<p>Take note that you <strong>CANNOT</strong> move on to the next step unless you have both of these values.</p>
+<h3><a class="header" href="#signing-in-to-microsoft" id="signing-in-to-microsoft">Signing in to Microsoft</a></h3>
+<p>Now that we have the required values, let's sign into Microsoft. In order to do this, we must send a <code>POST</code> request to the URL in the <code>urlPost</code> value we saved in the first step.</p>
+<p>The POST request must have the body of:</p>
+<pre><code>login=EMAIL_HERE&amp;loginfmt=EMAIL_HERE&amp;passwd=PASSWORD_HERE&amp;PPFT=SFTTAG_VALUE_HERE
+</code></pre>
+<p>Make sure you URL encode the email, password, and sFTTag value. The <code>Content-Type</code> header should be set to <code>application/x-www-form-urlencoded</code>. Make sure you also enable following redirects in whatever request library you use.</p>
+<p>After the request is done following all redirects, check if &quot;accessToken&quot; is present in the new URL, and if the new URL is the same as the <code>urlPost</code> URL that we first sent the request to. If both of these things are the case, the login failed. </p>
+<p>If the page source contains <code>&quot;Sign in to&quot;</code>, your credentials were wrong. If the page source contains <code>&quot;Help us protect your account&quot;</code>, 2-factor authentication is enabled on this account and must be removed or you need to enter your security information to confirm the login.</p>
+<p>Now we need to get the tokens that were returned inside this URL. Split the new URL by <code>#</code> so that you can get just the URL parameters and their values. You can then split the string again by <code>&amp;</code> to get each <code>param=value</code> pair, and again to each pair split by <code>=</code> to get the parameter name and value. Store these values however you wish.</p>
+<p>Some Python example code:</p>
+<pre><code class="language-python">raw_login_data = login_request.url.split(&quot;#&quot;)[1] # split the url to get the parameters
+login_data = dict(item.split(&quot;=&quot;) for item in raw_login_data.split(&quot;&amp;&quot;)) # create a dictionary of the parameters
+login_data[&quot;access_token&quot;] = requests.utils.unquote(login_data[&quot;access_token&quot;]) # URL decode the access token
+login_data[&quot;refresh_token&quot;] = requests.utils.unquote(login_data[&quot;refresh_token&quot;]) # URL decode the refresh token
+print(login_data) # print the data
+</code></pre>
+<p>This code returns the data in a <code>dict</code>, like so:</p>
+<pre><code class="language-python">{
+   'access_token': 'access token here',
+   'token_type': 'bearer',
+   'expires_in': '86400',
+   'scope': 'service::user.auth.xboxlive.com::MBI_SSL',
+   'refresh_token': 'refresh token here',
+   'user_id': 'user id here'
+}
+</code></pre>
+<p>Save the <code>access_token</code> value (and possibly the <code>refresh_token</code> value if you want!) and we can move on to the next step! Skip the &quot;OAuth 2&quot; section and move straight onto &quot;Signing into Minecraft&quot;!</p>
+<h2><a class="header" href="#oauth-2" id="oauth-2">OAuth 2</a></h2>
+<p><strong>Note:</strong> Before anything else, you must first get an OAuth 2 Client ID and Client Secret for your MSA. You can do this by clicking <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app">here</a> to register an Azure application.</p>
+<h3><a class="header" href="#logging-into-the-msa" id="logging-into-the-msa">Logging into the MSA</a></h3>
+<p>You must do this step in a browser.</p>
+<p>Navigate to the following URL: <code>https://login.live.com/oauth20_authorize.srf?client_id=AZURE_CLIENT_ID_HERE&amp;response_type=code&amp;redirect_uri=REDIRECT_URI_HERE&amp;scope=XboxLive.signin%20offline_access&amp;state=NOT_NEEDED</code>.</p>
+<p>From here, you'll be prompted to enter your MSA login information, and on a successful signin you'll be redirected to the following URL: <code>https://REDIRECT_URI_HERE?code=CODE_HERE&amp;state=NOT_NEEDED</code>. The <code>code</code> parameter must be extracted as you'll need this later on.</p>
+<h3><a class="header" href="#get-an-access-token" id="get-an-access-token">Get an access token</a></h3>
+<p>After you have your code, you need to get your access token. This needs your client secret from earlier. Keep this client secret safe!</p>
+<p>Then, send a <code>POST</code> request to <code>https://login.live.com/oauth20_token.srf</code> with the following POST body and the header <code>Content-Type: application/x-www-form-urlencoded</code>:</p>
+<pre><code>client_id=CLIENT_ID_HERE&amp;client_secret=CLIENT_SECRET_HERE&amp;code=CODE_FROM_PREVIOUS_STEP&amp;grant_type=authorization_code&amp;redirect_uri=REDIRECT_URI_HERE
+</code></pre>
+<p>If the request is successful, it will return a sample response such as this:</p>
 <pre><code class="language-json">{
-   &quot;identityToken&quot; : &quot;XBL3.0 x=uhs;xsts&quot;,
+    &quot;token_type&quot;: &quot;bearer&quot;,
+    &quot;expires_in&quot;: 86400,
+    &quot;scope&quot;: &quot;XboxLive.signin&quot;,
+    &quot;access_token&quot;: &quot;ACCESS_TOKEN_HERE&quot;,
+    &quot;refresh_token&quot;: &quot;M.R3_BAY.REFRESH_TOKEN_HERE&quot;,
+    &quot;user_id&quot;: &quot;USER_ID_HERE&quot;,
+    &quot;foci&quot;: &quot;1&quot;
+}
+</code></pre>
+<p>If you want to refresh an existing <code>access_token</code>, you can use the <code>refresh_token</code> and send a slightly different request - use the POST body:</p>
+<pre><code>client_id=CLIENT_ID_HERE&amp;client_secret=CLIENT_SECRET_HERE&amp;refresh_token=REFRESH_TOKEN_HERE&amp;grant_type=refresh_token&amp;redirect_uri=REDIRECT_URI_HERE
+</code></pre>
+<p>You will get the same response as shown above if the request is successful. Save the <code>access_token</code> and move onto &quot;Signing into Minecraft&quot;!</p>
+<h2><a class="header" href="#signing-into-minecraft" id="signing-into-minecraft">Signing into Minecraft</a></h2>
+<p>Now that we have signed into Microsoft, we can use the Microsoft access token in order to sign in to Minecraft. These steps are the same regardless of if you use OAuth 2 or plain email and password login.</p>
+<h3><a class="header" href="#signing-into-xbox-live" id="signing-into-xbox-live">Signing into Xbox Live</a></h3>
+<p>You now must sign into Xbox Live. In order to do this, you must send a <code>POST</code> request to <code>https://user.auth.xboxlive.com/user/authenticate</code> with the following body, and the headers <code>Content-Type: application/json</code> and <code>Accept: application/json</code>:</p>
+<pre><code class="language-json">{
+    &quot;Properties&quot;: {
+        &quot;AuthMethod&quot;: &quot;RPS&quot;,
+        &quot;SiteName&quot;: &quot;user.auth.xboxlive.com&quot;,
+        &quot;RpsTicket&quot;: &quot;ACCESS_TOKEN_HERE&quot;
+    },
+    &quot;RelyingParty&quot;: &quot;http://auth.xboxlive.com&quot;,
+    &quot;TokenType&quot;: &quot;JWT&quot;
+}
+</code></pre>
+<p>If all is successful, you will see a response similar to the below sample response:</p>
+<pre><code class="language-json">{
+    &quot;IssueInstant&quot;: &quot;2021-02-07T16:43:21.3324153Z&quot;,
+    &quot;NotAfter&quot;: &quot;2021-02-21T16:43:21.3324153Z&quot;,
+    &quot;Token&quot;: &quot;TOKEN_HERE&quot;,
+    &quot;DisplayClaims&quot;: {
+      &quot;xui&quot;: [
+         {
+            &quot;uhs&quot;: &quot;USER_HASH_HERE&quot;
+         }
+      ]
+    }
+}
+</code></pre>
+<p>Save the <code>Token</code> and the <code>uhs</code> values and move onto the next step!</p>
+<h3><a class="header" href="#getting-an-xsts-token" id="getting-an-xsts-token">Getting an XSTS token</a></h3>
+<p>This is the final step before we can log in with Minecraft! Send a <code>POST</code> request to <code>https://xsts.auth.xboxlive.com/xsts/authorize</code> with the following JSON body and the headers <code>Content-Type: application/json</code> and <code>Accept: application/json</code>:</p>
+<pre><code class="language-json">{
+    &quot;Properties&quot;: {
+        &quot;SandboxId&quot;: &quot;RETAIL&quot;,
+        &quot;UserTokens&quot;: [
+            &quot;TOKEN_HERE_FROM_PREVIOUS_STEP&quot;
+        ]
+    },
+    &quot;RelyingParty&quot;: &quot;rp://api.minecraftservices.com/&quot;,
+    &quot;TokenType&quot;: &quot;JWT&quot;
+}
+</code></pre>
+<p>You can either get a successful response or a 401 response.</p>
+<p><strong>Successful response:</strong></p>
+<pre><code class="language-json">{
+    &quot;IssueInstant&quot;: &quot;2021-02-07T21:41:03.6735105Z&quot;,
+    &quot;NotAfter&quot;: &quot;2021-02-08T13:41:03.6735105Z&quot;,
+    &quot;Token&quot;: &quot;SAVE_THIS_TOKEN&quot;,
+    &quot;DisplayClaims&quot;: {
+      &quot;xui&quot;: [
+         {
+            &quot;uhs&quot;: &quot;SAME_USER_HASH_AS_BEFORE&quot;
+         }
+      ]
+    }
+}
+</code></pre>
+<p><strong>401: Unauthorized</strong></p>
+<pre><code class="language-json">{
+    &quot;Identity&quot;: &quot;0&quot;,
+    &quot;XErr&quot;: 2148916238, // can either be 2148916238 (account belongs to someone under 18 and needs to be added to a family) or 2148916233 (account has no Xbox account, you must sign up for one first)
+    &quot;Message&quot;: &quot;&quot;,
+    &quot;Redirect&quot;: &quot;https://start.ui.xboxlive.com/AddChildToFamily&quot;
+}
+</code></pre>
+<h3><a class="header" href="#getting-the-bearer-token-for-minecraft" id="getting-the-bearer-token-for-minecraft">Getting the bearer token for Minecraft</a></h3>
+<p>Now, we can finally get the Minecraft bearer token. Send a <code>POST</code> request to <code>https://api.minecraftservices.com/authentication/login_with_xbox</code>. The POST body should be similar to:</p>
+<pre><code class="language-json">{
+   &quot;identityToken&quot; : &quot;XBL3.0 x=USER_HASH_HERE;XSTS_TOKEN_FROM_PREVIOUS_STEP&quot;,
    &quot;ensureLegacyEnabled&quot; : true
 }
 </code></pre>
 <p>You must send this request with the <code>Content-Type: application/json</code> header.</p>
 <p>You will get a response similar to this:</p>
 <pre><code class="language-json">{
-  &quot;username&quot; : &quot;830491e6-50e9-e9ed-6e8a-7041f4fef585&quot;, // Xbox account username
+  &quot;username&quot; : &quot;830491e6-50e9-e9ed-6e8a-7041f4fef585&quot;, // Xbox account username (?)
   &quot;roles&quot; : [ ], // i suppose this will have something in it if the account has a copy of Minecraft
   &quot;access_token&quot; : &quot;eyJhbGciOiJIUzI1NiJ9.eyJ4dWlkIjoiMjUzMzI3NDgwNTgyOTU2OCIsInN1YiI6IjgzMDQ5MWU2LTUwZTktZTllZC02ZThhLTcwNDFmNGZlZjU4NSIsIm5iZiI6MTYwNjg0NTE0Niwicm9sZXMiOltdLCJpc3MiOiJhdXRoZW50aWNhdGlvbiIsImV4cCI6MTYwNjkzMTU0NiwiaWF0IjoxNjA2ODQ1MTQ2LCJ5dWlkIjoiNTRmYzUwYzFiMWJjMTlkZDEwOWZiZWZmOWQxMWJmNDEifQ.-7H1jT3i54gmbqQcUBdHArOn-Jr8eZVAyPDiOr5q_XY&quot;, // access token
   &quot;token_type&quot; : &quot;Bearer&quot;, // don't think there are other types

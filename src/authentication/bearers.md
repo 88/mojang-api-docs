@@ -24,7 +24,7 @@ An example Yggdrasil authentication token, when decoded (try with [the official 
 ```
 
 ### MSA Tokens
-Microsoft Accounts are what Minecraft players will be logging in with very soon, so it's good to take a peek inside a MSA token! These are similar yet different in many ways to Yggdrasil tokens.
+Microsoft Accounts are what Minecraft players who made their accounts after December 1st, 2020 log in with, so it's good to take a peek inside a MSA token! These are similar yet different in many ways to Yggdrasil tokens.
 
 An example MSA token, when decoded (try with [the official JWT site](https://jwt.io/)!), looks like this:
 

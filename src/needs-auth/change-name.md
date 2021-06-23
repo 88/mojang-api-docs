@@ -1,6 +1,8 @@
 # Change your account's username
 This endpoint allows a user with a Minecraft profile to change their account's username.
 
+This endpoint has a ratelimit of 3 requests per account and per IP.
+
 ### Request
 - **Method:** `PUT`
 - **Endpoint:** `/minecraft/profile/name/:username`
@@ -54,7 +56,7 @@ This status code is returned when an error occurred when changing your username.
 }
 ```
 
-If interested, invalid length validation takes priority over invalid name violation, it seems.
+If interested, invalid length validation takes priority over invalid name validation, it seems.
 
 **401: Unauthorized**
 
@@ -72,21 +74,62 @@ You have not provided a valid JWT / auth token, or you have neglected to provide
 
 **403: Forbidden**
 
-If this error occurs, you are either trying to change the username of an account that has already changed its username in the past 30 days, **OR** you are trying to change the username of your account to a name that has already been taken or is still on cooldown.
+If this error occurs, you are either trying to change the username of an account that has already changed its username in the past 30 days, **OR** you are trying to change the username of your account to a name that has already been taken or is still on cooldown. 
+
+This error can also occur if you are trying to change an account's name that has not had its security questions answered, from what I have tested.
+
+```json
+{
+  "path": "/minecraft/profile/name/:username",
+  "errorType": "FORBIDDEN",
+  "error": "FORBIDDEN",
+  "errorMessage": "Could not change name for profile",
+  "developerMessage": "Could not change name for profile",
+  "details": {
+    "status": "DUPLICATE"
+  }
+}
+```
+
+**404: Not Found**
+
+If this error occurs, you are trying to change the username of an account that does not own a copy of Minecraft.
 
 ```json
 {
   "path" : "/minecraft/profile/name/:username",
-  "errorType" : "FORBIDDEN",
-  "error" : "FORBIDDEN"
+  "errorMessage" : "Could not find profile",
+  "developerMessage" : "Could not find profile"
+}
+```
+
+**405: Method Not Allowed**
+
+If this error occurs, you have not set the request method to `PUT`.
+
+```json
+{
+  "path" : "/minecraft/profile/name/:username",
+  "errorType" : "METHOD_NOT_ALLOWED",
+  "error" : "METHOD_NOT_ALLOWED",
+  "errorMessage" : "Method Not Allowed",
+  "developerMessage" : "Method Not Allowed"
 }
 ```
 
 **429: Too Many Requests**
 
-If you have sent too many requests in a specific amount of time (3 requests every 60 seconds seems to be the limit), this error will appear.
+If you have sent too many requests in a specific amount of time (3 requests per account and per IP), this error will appear. 
+
+Two responses are noted here, one at the most recent time of testing (June 14, 2021), and the other from some point in January 2021.
 
 ```json
+// got this error when I last tested this endpoint (June 14, 2021)
+{
+  "path" : "/minecraft/profile/name/:username"
+}
+
+// older error, I didn't get this error the most recent time I tested the endpoint
 {
   "path" : "/minecraft/profile/name/:username",
   "errorType" : "TooManyRequestsException",
@@ -98,7 +141,7 @@ If you have sent too many requests in a specific amount of time (3 requests ever
 
 **500: Internal Server Error**
 
-If this status code is returned, you are most likely trying to change the username of an account that has security questions enabled, which you have not answered. Other issues could cause this error as well, for example if the API is being overloaded.
+This error may be caused due to the API overloading with requests.
 
 ```json
 {
